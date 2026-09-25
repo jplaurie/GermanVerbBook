@@ -1,0 +1,277 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{style/germanbook}[2026/09/25 German verb reference layout]
+
+\RequirePackage{xcolor,amsmath,csquotes,graphicx,enumitem,amsthm,amsfonts,amssymb,centernot,marginnote,tikz,bm}
+\RequirePackage[a4paper,margin=1cm]{geometry}
+\RequirePackage{multirow}
+\RequirePackage[many]{tcolorbox}
+\RequirePackage{booktabs,tabularx,array}
+\RequirePackage{colortbl}
+\RequirePackage{etoolbox}
+\RequirePackage{imakeidx}
+\RequirePackage[hidelinks]{hyperref}
+
+\tcbset{before skip=10pt,after skip=10pt}
+
+% Case colours are deliberately pale when used as backgrounds so black table
+% text remains easy to read.  Gender colours are darker versions intended for
+% text on those backgrounds.
+\definecolor{caseNominativeBg}{RGB}{255,224,224}
+\definecolor{caseAccusativeBg}{RGB}{222,235,255}
+\definecolor{caseDativeBg}{RGB}{224,244,224}
+\definecolor{caseGenitiveBg}{RGB}{255,245,194}
+
+\definecolor{genderMasculine}{RGB}{20,70,150}
+\definecolor{genderNeuter}{RGB}{20,105,55}
+\definecolor{genderFeminine}{RGB}{170,35,45}
+\definecolor{genderPlural}{RGB}{145,105,0}
+
+\definecolor{referenceBlueBg}{RGB}{232,241,252}
+\definecolor{referenceGreenBg}{RGB}{232,246,234}
+\definecolor{referenceYellowBg}{RGB}{255,248,216}
+\definecolor{referenceRedBg}{RGB}{252,233,233}
+
+\newcolumntype{M}{>{\color{genderMasculine}}c}
+\newcolumntype{N}{>{\color{genderNeuter}}c}
+\newcolumntype{F}{>{\color{genderFeminine}}c}
+\newcolumntype{P}{>{\color{genderPlural}}c}
+
+\makeindex[name=german,title={German Verb Index},columns=2]
+\makeindex[name=english,title={English Meaning Index},columns=2]
+
+\makeatletter
+\pgfkeys{
+  /germanbook/verb/.is family,
+  /germanbook/verb,
+  style/.store in=\verb@style,
+  toc/.store in=\verb@toc,
+  name/.store in=\verb@name,
+  english/.store in=\verb@english,
+  type/.store in=\verb@type,
+  auxiliary/.store in=\verb@auxiliary,
+}
+
+\newcommand{\verbentrydefaults}{%
+  \pgfkeys{/germanbook/verb,
+    style=default,
+    toc={},
+    name={},
+    english={},
+    type={},
+    auxiliary={}%
+  }%
+}
+
+\newcommand{\verbentrybackground}{%
+  \def\verb@background{black!5!white}% original tcolorbox default
+  \ifdefstring{\verb@style}{modal}{\def\verb@background{yellow!20}}{}%
+  \ifdefstring{\verb@style}{nom}{\def\verb@background{caseNominativeBg}}{}%
+  \ifdefstring{\verb@style}{acc}{\def\verb@background{caseAccusativeBg}}{}%
+  \ifdefstring{\verb@style}{dat}{\def\verb@background{caseDativeBg}}{}%
+  \ifdefstring{\verb@style}{gen}{\def\verb@background{caseGenitiveBg}}{}%
+  \ifdefstring{\verb@style}{sep}{\def\verb@background{orange!20}}{}%
+}
+
+% A verb entry owns all repeated presentation and indexing behavior.  The body
+% intentionally remains ordinary LaTeX so migrated tables retain their exact
+% row layout and new entries can accommodate exceptional forms.
+\NewDocumentEnvironment{verbentry}{m}{%
+  \begingroup
+  \verbentrydefaults
+  \pgfkeys{/germanbook/verb,#1}%
+  \verbentrybackground
+  \begin{tcolorbox}[
+    enhanced,
+    colframe=black,
+    colback=\verb@background,
+    right=6mm
+  ]%
+  % Conjugation groups have different row counts (the imperative is shorter
+  % than the present and simple past).  Default tabulars align on their
+  % vertical centres, so their headings do not share a baseline.  Within a
+  % verb entry, make top alignment the default while still allowing an
+  % explicit optional position when an exceptional table needs one.
+  \let\verb@originaltabular\tabular
+  \let\verb@originalendtabular\endtabular
+  \renewenvironment{tabular}[2][t]{%
+    \verb@originaltabular[##1]{##2}%
+  }{%
+    \verb@originalendtabular
+  }%
+  \phantomsection
+  \expandafter\index\expandafter[german]{\verb@name}%
+  \expandafter\index\expandafter[english]{\verb@english{} (\verb@name)}%
+  {\Large\bfseries \verb@name} (\verb@english) \hfill
+  Type: \textbf{\verb@type} \hfill
+  Auxiliary Verb: \textbf{\verb@auxiliary}%
+}{%
+  \end{tcolorbox}%
+  \endgroup
+}
+\makeatother
+
+\newcommand{\caseabbr}[1]{\textsc{#1}}
+\newcommand{\example}[2]{\textit{#1} --- #2}
+% A compact related-verb row remains discoverable in both indexes even though
+% it no longer needs a full standalone conjugation table.
+\newcommand{\relatedverb}[3]{%
+  \index[german]{#1}%
+  \index[english]{#2 (#1)}%
+  \textbf{#3}%
+}
+
+% Expand a stored comma-list only at the point where its requested form is
+% typeset. This preserves LaTeX commands such as accents inside the data.
+\ExplSyntaxOn
+\cs_generate_variant:Nn \clist_item:nn { Vn }
+\cs_new:Npn \germanbookclistmacroitem #1#2 { \clist_item:Vn #1 {#2} }
+\ExplSyntaxOff
+
+% Canonical verb-table renderer. Every verb in verbs/verb-list.tex uses this
+% command, including auxiliaries, modal verbs and reflexive verbs. The data
+% keys keep exceptional forms and optional sections explicit while the visual
+% construction remains in one place.
+\makeatletter
+\pgfkeys{
+  /germanbook/table/.is family,
+  /germanbook/table,
+  name/.store in=\verbtable@name,
+  english/.store in=\verbtable@english,
+  type/.store in=\verbtable@type,
+  auxiliary/.store in=\verbtable@auxiliary,
+  style/.store in=\verbtable@style,
+  present/.store in=\verbtable@present,
+  preterite/.store in=\verbtable@preterite,
+  subjunctive/.store in=\verbtable@subjunctive,
+  imperative/.store in=\verbtable@imperative,
+  perfect/.store in=\verbtable@perfect,
+  future/.store in=\verbtable@future,
+  pluperfect/.store in=\verbtable@pluperfect,
+  prepositions/.store in=\verbtable@prepositions,
+  separable/.store in=\verbtable@separable,
+  bottom-layout/.store in=\verbtable@bottomlayout,
+}
+
+\newcommand{\verbtable@sixrows}[1]{%
+  ich & \textbf{\germanbookclistmacroitem#1{1}}\\
+  du & \textbf{\germanbookclistmacroitem#1{2}}\\
+  er/sie/es & \textbf{\germanbookclistmacroitem#1{3}}\\
+  wir & \textbf{\germanbookclistmacroitem#1{4}}\\
+  ihr & \textbf{\germanbookclistmacroitem#1{5}}\\
+  sie/Sie & \textbf{\germanbookclistmacroitem#1{6}}\\
+}
+
+\newcommand{\verbtable@imperativerows}[1]{%
+  \ifdefstring{#1}{---}{%
+    & \textbf{---}\\
+  }{%
+    du & \textbf{\germanbookclistmacroitem#1{1}}\\
+    wir & \textbf{\germanbookclistmacroitem#1{2}}\\
+    ihr & \textbf{\germanbookclistmacroitem#1{3}}\\
+    Sie & \textbf{\germanbookclistmacroitem#1{4}}\\
+  }%
+}
+
+\newcommand{\verbtable@prepositionblock}{%
+  \begin{tabular}{@{}lll@{}}
+    \multicolumn{3}{@{}l}{\textbf{MIT PRÄPOSITIONEN}}\\
+    \ifdefstring{\verbtable@prepositions}{---}
+      {& \textbf{---} & \\}
+      {\verbtable@prepositions}
+  \end{tabular}%
+}
+
+\newcommand{\verbtable@separableblock}{%
+  \begin{tabular}{@{}lll@{}}
+    \multicolumn{3}{@{}l}{\textbf{TRENNBARE VERBEN}}\\
+    \ifdefstring{\verbtable@separable}{---}
+      {& \textbf{---} & \\}
+      {\verbtable@separable}
+  \end{tabular}%
+}
+
+\NewDocumentCommand{\VerbTable}{m}{%
+  \begingroup
+  \def\verbtable@name{}%
+  \def\verbtable@english{}%
+  \def\verbtable@type{}%
+  \def\verbtable@auxiliary{}%
+  \def\verbtable@style{default}%
+  \def\verbtable@present{---,---,---,---,---,---}%
+  \def\verbtable@preterite{---,---,---,---,---,---}%
+  \def\verbtable@subjunctive{}%
+  \def\verbtable@imperative{---}%
+  \def\verbtable@perfect{---}%
+  \def\verbtable@future{---}%
+  \def\verbtable@pluperfect{---}%
+  \def\verbtable@prepositions{---}%
+  \def\verbtable@separable{---}%
+  \def\verbtable@bottomlayout{inline}%
+  \pgfkeys{/germanbook/table/.cd,#1}%
+  \begin{verbentry}{
+    style/.expanded = {\verbtable@style},
+    name/.expanded = {\verbtable@name},
+    english/.expanded = {\verbtable@english},
+    type/.expanded = {\verbtable@type},
+    auxiliary/.expanded = {\verbtable@auxiliary}
+  }
+  \vspace{5pt}
+  \hrule
+  \vspace{5pt}
+
+  \begin{tabular}[t]{@{}ll@{}}
+    \multicolumn{2}{@{}l}{\textbf{PRÄSENS}}\\
+    \verbtable@sixrows\verbtable@present
+  \end{tabular}
+  \hfill
+  \begin{tabular}[t]{@{}ll@{}}
+    \multicolumn{2}{@{}l}{\textbf{PRÄTERITUM}}\\
+    \verbtable@sixrows\verbtable@preterite
+  \end{tabular}
+  \hfill
+  \ifdefempty{\verbtable@subjunctive}{}{%
+    \begin{tabular}[t]{@{}ll@{}}
+      \multicolumn{2}{@{}l}{\textbf{KONJUNKTIV II}}\\
+      \verbtable@sixrows\verbtable@subjunctive
+    \end{tabular}
+    \hfill
+  }%
+  \begin{tabular}[t]{@{}r@{\hspace{0.45em}}l@{}}
+    \multicolumn{2}{@{}l}{\textbf{IMPERATIV}}\\
+    \verbtable@imperativerows\verbtable@imperative
+  \end{tabular}
+
+  \vspace{10pt}
+
+  \begin{tabular}[t]{@{}ll@{}}
+    \multicolumn{2}{@{}l}{\textbf{PERFEKT}}\\
+    & \verbtable@perfect\\
+  \end{tabular}
+  \hfill
+  \begin{tabular}[t]{@{}ll@{}}
+    \multicolumn{2}{@{}l}{\textbf{FUTUR I}}\\
+    & \verbtable@future\\
+  \end{tabular}
+  \hfill
+  \begin{tabular}[t]{@{}ll@{}}
+    \multicolumn{2}{@{}l}{\textbf{PLUSQUAMPERFEKT}}\\
+    & \verbtable@pluperfect\\
+  \end{tabular}
+
+  \vspace{10pt}
+
+  \ifdefstring{\verbtable@bottomlayout}{stacked}{%
+    \verbtable@prepositionblock
+    \vspace{10pt}
+
+    \verbtable@separableblock
+  }{%
+    \verbtable@prepositionblock
+    \hfill
+    \verbtable@separableblock
+  }%
+  \vspace{-5pt}
+  \end{verbentry}
+  \endgroup
+}
+\makeatother

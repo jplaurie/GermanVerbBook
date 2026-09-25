@@ -1,0 +1,42 @@
+\documentclass[10pt,a4paper,oneside,open=any]{scrbook}
+\usepackage{style/germanbook}
+\hypersetup{
+  pdftitle={German Verb Reference},
+  pdfauthor={Jason Laurie}
+}
+
+\title{German Verb Reference}
+\subtitle{Conjugation, Government, and Grammar Tables}
+\author{Jason Laurie}
+\date{September 2026}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+\tableofcontents
+
+\mainmatter
+\part{Grammar Reference}
+\input{grammar/cases-and-declension}
+\input{grammar/tenses}
+\input{grammar/conjunctions}
+\input{grammar/strong-verbs}
+
+\part{Verb Reference}
+\begin{tcolorbox}[colback=referenceYellowBg,colframe=genderPlural]
+\textbf{Table convention.} A single em dash (---) under \textbf{IMPERATIV}
+means that no normal imperative is shown. Under \textbf{MIT PRÄPOSITIONEN} or
+\textbf{TRENNBARE VERBEN}, it means that the table intentionally lists no item
+in that category; it is not an accidentally blank section. The latter heading
+lists related prefixed verbs---whether the headword itself is separable is
+shown beside \textbf{Type}.
+\end{tcolorbox}
+% All verb records live in one canonical source and use the same renderer.
+\input{verbs/verb-list}
+
+\backmatter
+\printindex[german]
+\printindex[english]
+
+\end{document}
