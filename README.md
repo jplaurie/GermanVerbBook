@@ -1,7 +1,7 @@
 # German Verb Reference
 
-This project is a reorganized, book-oriented edition of `verb_table_v6.tex`.
-The legacy source is retained under `legacy/` for comparison.
+This project is a book-oriented German grammar and verb reference. All verb
+data is maintained in one canonical source file.
 
 ## Build
 
@@ -18,7 +18,6 @@ The result is `GermanBook.pdf`. Run `latexmk -C` to remove generated files.
 - `grammar/` — grammar-reference chapters
 - `verbs/verb-list.tex` — the single canonical list of all verb data
 - `templates/new-verb.tex` — starter entry for adding a verb
-- `legacy/verb_table_v6.tex` — unchanged original source
 
 ## Adding a verb
 
@@ -28,3 +27,15 @@ the box, heading alignment, row labels, empty-section dashes and indexes, so
 those features are not duplicated in individual entries. Leave `subjunctive`
 empty when it is not being shown; use `---` for an imperative, preposition or
 related-separable-verb section that has no forms to display.
+
+Do not add a separate full table for a separable compound whose base verb is
+already present. Add it to that stem's `separable` field using `\relatedverb`,
+for example:
+
+```tex
+& \relatedverb{ausstellen}{to issue / exhibit}{aus$|$stellen}
+  & (to issue / exhibit)\\
+```
+
+The command keeps the compact compound in both indexes. A genuinely missing
+base stem should receive a full `\VerbTable` entry first.
