@@ -1,6 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{style/germanbook}[2026/09/25 German verb reference layout]
 
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}
 \RequirePackage{xcolor,amsmath,csquotes,graphicx,enumitem,amsthm,amsfonts,amssymb,centernot,marginnote,tikz,bm}
 \RequirePackage[a4paper,margin=1cm]{geometry}
 \RequirePackage{multirow}
@@ -165,10 +167,10 @@
   \ifdefstring{#1}{---}{%
     & \textbf{---}\\
   }{%
-    du & \textbf{\germanbookclistmacroitem#1{1}}\\
-    wir & \textbf{\germanbookclistmacroitem#1{2}}\\
-    ihr & \textbf{\germanbookclistmacroitem#1{3}}\\
-    Sie & \textbf{\germanbookclistmacroitem#1{4}}\\
+    & \textbf{\germanbookclistmacroitem#1{1}}\\
+    & \textbf{\germanbookclistmacroitem#1{2}}\\
+    & \textbf{\germanbookclistmacroitem#1{3}}\\
+    & \textbf{\germanbookclistmacroitem#1{4}}\\
   }%
 }
 
