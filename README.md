@@ -1,7 +1,15 @@
 # German Verb Reference
 
-This project is a book-oriented German grammar and verb reference. All verb
-data is maintained in one canonical source file.
+This repository contains a German grammar and verb-reference book developed
+as part of my own German-learning journey. It brings together the rules,
+patterns and examples that I have found most useful, with a particular focus
+on practical verb usage.
+
+The book is an ongoing project and will continue to evolve as I learn, revise
+the material and improve its presentation. Corrections and constructive
+suggestions are welcome.
+
+All verb data is maintained in one canonical source file.
 
 ## Build
 
@@ -38,4 +46,6 @@ for example:
 ```
 
 The command keeps the compact compound in both indexes. A genuinely missing
-base stem should receive a full `\VerbTable` entry first.
+base stem should receive a full `\VerbTable` entry first. The base table
+supplies the compound's stem pattern, but its auxiliary may differ according
+to meaning; the book's table-convention note explains this distinction.
