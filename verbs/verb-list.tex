@@ -72,9 +72,9 @@ different auxiliary according to its meaning; for example,
 \VerbTable{
   name = {werden},
   english = {to become},
-  type = {irregular},
+  type = {irregular, + Nominativ},
   auxiliary = {sein},
-  style = {acc},
+  style = {nom},
   present = {werde,wirst,wird,werden,werdet,werden},
   preterite = {wurde,wurdest,wurde,wurden,wurdet,wurden},
   subjunctive = {würde,würdest,würde,würden,würdet,würden},
@@ -245,7 +245,7 @@ different auxiliary according to its meaning; for example,
 
 \VerbTable{
   name = {sich amüsieren},
-  english = {to amuse},
+  english = {to enjoy oneself / have fun},
   type = {regular},
   auxiliary = {haben},
   style = {default},
@@ -398,13 +398,13 @@ different auxiliary according to its meaning; for example,
   perfect = {haben + sich + \textbf{beteiligt}},
   future = {werden + sich + \textbf{beteiligen}},
   pluperfect = {hatten + sich + \textbf{beteiligt}},
-  prepositions = {---},
+  prepositions = {& \textbf{sich beteiligen an} + Dat & (to participate in)\\},
   separable = {---}
 }
 
 \VerbTable{
   name = {sich bewegen},
-  english = {to move oneself},
+  english = {to move},
   type = {regular},
   auxiliary = {haben},
   style = {default},
@@ -419,6 +419,26 @@ different auxiliary according to its meaning; for example,
     & \textbf{sich bewegen in} + Dat & (to move in)\\
     & \textbf{sich bewegen auf} + Akk & (to move toward)\\
     & \textbf{sich bewegen durch} + Akk & (to move through)\\
+  },
+  separable = {---}
+}
+
+\VerbTable{
+  name = {sich bewerben},
+  english = {to apply},
+  type = {strong / irregular},
+  auxiliary = {haben},
+  style = {default},
+  present = {bewerbe mich,bewirbst dich,bewirbt sich,bewerben uns,bewerbt euch,bewerben sich},
+  preterite = {bewarb mich,bewarbst dich,bewarb sich,bewarben uns,bewarbt euch,bewarben sich},
+  subjunctive = {},
+  imperative = {bewirb (du) dich!,bewerben wir uns!,bewerbt (ihr) euch!,bewerben Sie sich!},
+  perfect = {haben + sich + \textbf{beworben}},
+  future = {werden + sich + \textbf{bewerben}},
+  pluperfect = {hatten + sich + \textbf{beworben}},
+  prepositions = {
+    & \textbf{sich bewerben bei} + Dat & (to apply to / at)\\
+    & \textbf{sich bewerben um} + Akk & (to apply for)
   },
   separable = {---}
 }
@@ -493,7 +513,11 @@ different auxiliary according to its meaning; for example,
   perfect = {haben + sich + \textbf{geeinigt}},
   future = {werden + sich + \textbf{einigen}},
   pluperfect = {hatten + sich + \textbf{geeinigt}},
-  prepositions = {---},
+  prepositions = {
+    & \textbf{sich einigen mit} + Dat & (to reach agreement with)\\
+    & \textbf{sich einigen auf} + Akk & (to agree on)\\
+    & \textbf{sich einigen über} + Akk & (to reach agreement about)
+  },
   separable = {---}
 }
 
@@ -840,7 +864,7 @@ different auxiliary according to its meaning; for example,
 
 \VerbTable{
   name = {sich interessieren},
-  english = {to be interest in},
+  english = {to be interested in},
   type = {regular},
   auxiliary = {haben},
   style = {default},
@@ -928,7 +952,7 @@ different auxiliary according to its meaning; for example,
 
 \VerbTable{
   name = {sich langweilen},
-  english = {to be bored / bore},
+  english = {to be bored},
   type = {regular},
   auxiliary = {haben},
   style = {default},
@@ -1020,17 +1044,17 @@ different auxiliary according to its meaning; for example,
 \VerbTable{
   name = {sich nähern},
   english = {to approach},
-  type = {regular},
+  type = {regular, + Dativ},
   auxiliary = {haben},
-  style = {default},
-  present = {nähre mich,näherst dich,nähert sich,nähern uns,nähert euch,nähern sich},
+  style = {dat},
+  present = {nähere mich,näherst dich,nähert sich,nähern uns,nähert euch,nähern sich},
   preterite = {näherte mich,nähertest dich,näherte sich,näherten uns,nähertet euch,näherten sich},
   subjunctive = {},
   imperative = {nähere (du) dich!,nähern wir uns!,nähert (ihr) euch!,nähern Sie sich!},
   perfect = {haben + sich + \textbf{genähert}},
   future = {werden + sich + \textbf{nähern}},
   pluperfect = {hatten + sich + \textbf{genähert}},
-  prepositions = {---},
+  prepositions = {& \textbf{sich nähern} + Dat & (to approach someone / something)\\},
   separable = {---}
 }
 
@@ -1130,7 +1154,7 @@ different auxiliary according to its meaning; for example,
 
 \VerbTable{
   name = {sich schminken},
-  english = {to put on makeup},
+  english = {to put on make-up},
   type = {regular},
   auxiliary = {haben},
   style = {default},
@@ -1142,12 +1166,12 @@ different auxiliary according to its meaning; for example,
   future = {werden + sich + \textbf{schminken}},
   pluperfect = {hatten + sich + \textbf{geschminkt}},
   prepositions = {
-    & \textbf{sich schminken für} + Akk & (to put on makeup for)\\
-    & \textbf{sich schminken mit} + Dat & (to put makeup on with)\\
+    & \textbf{sich schminken für} + Akk & (to put on make-up for)\\
+    & \textbf{sich schminken mit} + Dat & (to put make-up on with)\\
   },
   separable = {
-    & \relatedverb{sich abschminken}{to remove one's makeup}{sich ab$|$schminken} & (to remove one's makeup)\\
-    & \relatedverb{sich anschminken}{to put on makeup}{sich an$|$schminken} & (to put on makeup)\\
+    & \relatedverb{sich abschminken}{to remove one's make-up}{sich ab$|$schminken} & (to remove one's make-up)\\
+    & \relatedverb{sich anschminken}{to put on make-up}{sich an$|$schminken} & (to put on make-up)\\
   }
 }
 
@@ -1264,7 +1288,7 @@ different auxiliary according to its meaning; for example,
 
 \VerbTable{
   name = {sich treffen},
-  english = {to come forward},
+  english = {to meet / meet up},
   type = {irregular, + Akkusativ},
   auxiliary = {haben},
   style = {acc},
@@ -1389,7 +1413,7 @@ different auxiliary according to its meaning; for example,
 
 \VerbTable{
   name = {sich verlaufen},
-  english = {to get lost / run},
+  english = {to get lost},
   type = {strong / irregular},
   auxiliary = {haben},
   style = {default},
@@ -1583,8 +1607,8 @@ different auxiliary according to its meaning; for example,
 \chapter{Alphabetical Verb Tables}
 
 \begin{tcolorbox}[colback=referenceBlueBg,colframe=genderMasculine,title={B1 coverage note}]
-This reference contains 599 complete stem tables. A further 346 separable
-compounds are listed compactly under their stems, giving 945 indexed verb
+This reference contains 600 complete stem tables. A further 346 separable
+compounds are listed compactly under their stems, giving 946 indexed verb
 headwords. The selection targets the verbs most useful through CEFR B1; CEFR
 does not prescribe one official exhaustive verb list. Each full table includes
 all applicable present and simple-past forms, four imperative forms where they
@@ -1700,7 +1724,7 @@ exist, and the perfect, future and pluperfect constructions.
 
 \VerbTable{
   name = {analysieren},
-  english = {to analyze},
+  english = {to analyse},
   type = {regular},
   auxiliary = {haben},
   style = {default},
@@ -3573,7 +3597,7 @@ exist, and the perfect, future and pluperfect constructions.
 
 \VerbTable{
   name = {erfüllen},
-  english = {to fulfill},
+  english = {to fulfil},
   type = {regular},
   auxiliary = {haben},
   style = {default},
@@ -3661,7 +3685,7 @@ exist, and the perfect, future and pluperfect constructions.
 
 \VerbTable{
   name = {erkennen},
-  english = {to recognize},
+  english = {to recognise},
   type = {regular},
   auxiliary = {haben},
   style = {default},
@@ -4137,7 +4161,7 @@ exist, and the perfect, future and pluperfect constructions.
   future = {werden + \textbf{fassen}},
   pluperfect = {hatten + \textbf{gefasst}},
   prepositions = {---},
-  separable = {& \relatedverb{zusammenfassen}{to summarize}{zusammen$|$fassen} & (to summarize)\\}
+  separable = {& \relatedverb{zusammenfassen}{to summarise}{zusammen$|$fassen} & (to summarise)\\}
 }
 
 \VerbTable{
@@ -5813,7 +5837,7 @@ exist, and the perfect, future and pluperfect constructions.
 
 \VerbTable{
   name = {kritisieren},
-  english = {to criticize},
+  english = {to criticise},
   type = {regular},
   auxiliary = {haben},
   style = {default},
@@ -6688,7 +6712,7 @@ exist, and the perfect, future and pluperfect constructions.
 
 \VerbTable{
   name = {organisieren},
-  english = {to organize},
+  english = {to organise},
   type = {regular, + Akkusativ},
   auxiliary = {haben},
   style = {acc},
@@ -6699,7 +6723,7 @@ exist, and the perfect, future and pluperfect constructions.
   perfect = {haben + \textbf{organisiert}},
   future = {werden + \textbf{organisieren}},
   pluperfect = {hatten + \textbf{organisiert}},
-  prepositions = {& \textbf{organisieren für} + Akk & (to organize for)\\},
+  prepositions = {& \textbf{organisieren für} + Akk & (to organise for)\\},
   separable = {---}
 }
 
@@ -8988,7 +9012,7 @@ exist, and the perfect, future and pluperfect constructions.
 
 \VerbTable{
   name = {trainieren},
-  english = {to train / practice},
+  english = {to train / practise},
   type = {regular},
   auxiliary = {haben},
   style = {default},
@@ -9164,7 +9188,7 @@ exist, and the perfect, future and pluperfect constructions.
 
 \VerbTable{
   name = {üben},
-  english = {to practice},
+  english = {to practise},
   type = {regular},
   auxiliary = {haben},
   style = {default},
@@ -9176,12 +9200,12 @@ exist, and the perfect, future and pluperfect constructions.
   future = {werden + \textbf{üben}},
   pluperfect = {hatten + \textbf{geübt}},
   prepositions = {
-    & \textbf{üben für} + Akk & (to practice for)\\
-    & \textbf{üben mit} + Dat & (to practice with)\\
+    & \textbf{üben für} + Akk & (to practise for)\\
+    & \textbf{üben mit} + Dat & (to practise with)\\
   },
   separable = {
     & \relatedverb{ausüben}{to exercise / carry out}{aus$|$üben} & (to exercise / carry out)\\
-    & \relatedverb{einüben}{to rehearse / practice}{ein$|$üben} & (to rehearse / practice)\\
+    & \relatedverb{einüben}{to rehearse / practise}{ein$|$üben} & (to rehearse / practise)\\
   }
 }
 

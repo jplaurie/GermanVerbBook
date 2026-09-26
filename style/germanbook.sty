@@ -4,14 +4,21 @@
 \RequirePackage[T1]{fontenc}
 \RequirePackage{lmodern}
 \RequirePackage{xcolor,amsmath,csquotes,graphicx,enumitem,amsthm,amsfonts,amssymb,centernot,marginnote,tikz,bm}
-\RequirePackage[a4paper,margin=1cm]{geometry}
+\RequirePackage[
+  a4paper,
+  margin=1cm,
+  headheight=12pt,
+  headsep=2mm,
+  footskip=6mm
+]{geometry}
 \RequirePackage{multirow}
 \RequirePackage[many]{tcolorbox}
 \RequirePackage{booktabs,tabularx,array}
 \RequirePackage{colortbl}
 \RequirePackage{etoolbox}
 \RequirePackage{imakeidx}
-\RequirePackage[hidelinks]{hyperref}
+\RequirePackage[automark,headsepline]{scrlayer-scrpage}
+\RequirePackage{hyperref}
 
 \tcbset{before skip=10pt,after skip=10pt}
 
@@ -33,13 +40,112 @@
 \definecolor{referenceYellowBg}{RGB}{255,248,216}
 \definecolor{referenceRedBg}{RGB}{252,233,233}
 
+% Navigation and heading hierarchy. Running pages carry the most specific
+% useful heading; chapter-opening pages keep only a discreet footer folio.
+\clearpairofpagestyles
+\automark[section]{chapter}
+\ihead{\headmark}
+\ohead{\pagemark}
+\ofoot[\pagemark]{}
+\setkomafont{pageheadfoot}{\small\sffamily\color{black!65}}
+\setkomafont{pagenumber}{\bfseries\color{genderMasculine}}
+\setkomafont{headsepline}{\color{genderMasculine}}
+\renewcommand*{\chapterpagestyle}{plain.scrheadings}
+\pagestyle{scrheadings}
+
+% Give major divisions a consistent visual signature without changing the
+% compact section hierarchy used inside the grammar chapters.
+\setkomafont{partprefix}{\Large\sffamily\bfseries\color{genderMasculine}}
+\setkomafont{part}{\Huge\sffamily\bfseries\color{black}}
+\setkomafont{chapter}{\huge\sffamily\bfseries\color{black}}
+\renewcommand*{\chapterformat}{%
+  \makebox[1.35em][l]{\color{black}\thechapter\autodot}%
+}
+\renewcommand*{\partlineswithprefixformat}[3]{%
+  #2#3%
+  \vspace{1.2ex}\par\nobreak
+  {\color{genderMasculine}\rule{0.34\textwidth}{1.5pt}\par}%
+}
+
+% Internal navigation remains subtle, but links are now identifiable on
+% screen and retain adequate contrast when printed in colour.
+\hypersetup{
+  colorlinks=true,
+  linkcolor=genderMasculine,
+  urlcolor=genderMasculine
+}
+
 \newcolumntype{M}{>{\color{genderMasculine}}c}
 \newcolumntype{N}{>{\color{genderNeuter}}c}
 \newcolumntype{F}{>{\color{genderFeminine}}c}
 \newcolumntype{P}{>{\color{genderPlural}}c}
 
-\makeindex[name=german,title={German Verb Index},columns=2]
-\makeindex[name=english,title={English Meaning Index},columns=2]
+\newcommand{\indexletter}[1]{%
+  \par\addvspace{0.7\baselineskip}%
+  \noindent
+  \colorbox{referenceBlueBg}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+      \centering\sffamily\bfseries\color{genderMasculine}#1%
+    }%
+  }%
+  \par\nobreak
+}
+\renewcommand*{\columnseprulecolor}{\color{referenceBlueBg}}
+\indexsetup{firstpagestyle=plain.scrheadings,othercode=\small}
+\makeindex[
+  name=german,
+  title={German Verb Index},
+  columns=2,
+  columnseprule,
+  options={-s style/germanbook.ist}
+]
+\makeindex[
+  name=english,
+  title={English Meaning Index},
+  columns=2,
+  columnseprule,
+  options={-s style/germanbook.ist}
+]
+
+% Index sort keys are kept separate from their displayed text. German umlauts
+% join their base-letter groups, reflexive entries sort by the lexical verb,
+% and English meanings ignore the repeated infinitive marker "to".
+\ExplSyntaxOn
+\cs_new_protected:Npn \germanbook_index_write:nn #1#2
+  { \index[#1]{#2} }
+
+\cs_new_protected:Npn \germanbook_german_index:n #1
+  {
+    \tl_set:Nx \l_tmpa_tl {#1}
+    \tl_set_eq:NN \l_tmpb_tl \l_tmpa_tl
+    \regex_replace_once:nnN { \A sich \s+ } { } \l_tmpb_tl
+    \tl_replace_all:Nnn \l_tmpb_tl {ä} {a}
+    \tl_replace_all:Nnn \l_tmpb_tl {ö} {o}
+    \tl_replace_all:Nnn \l_tmpb_tl {ü} {u}
+    \tl_replace_all:Nnn \l_tmpb_tl {ß} {ss}
+    \exp_args:Nnx \germanbook_index_write:nn {german}
+      { \tl_use:N \l_tmpb_tl @\exp_not:V \l_tmpa_tl }
+  }
+
+\cs_new_protected:Npn \germanbook_english_index:nn #1#2
+  {
+    \tl_set:Nx \l_tmpa_tl {#1}
+    \tl_set:Nx \l_tmpb_tl {#2}
+    \tl_set_eq:NN \l_tmpc_tl \l_tmpa_tl
+    \regex_replace_once:nnN { \A to \s+ } { } \l_tmpc_tl
+    \exp_args:Nnx \germanbook_index_write:nn {english}
+      {
+        \tl_use:N \l_tmpc_tl @
+        \exp_not:V \l_tmpa_tl \c_space_tl
+        (\exp_not:V \l_tmpb_tl)
+      }
+  }
+
+\NewDocumentCommand{\germanbookgermanindex}{m}
+  { \germanbook_german_index:n {#1} }
+\NewDocumentCommand{\germanbookenglishindex}{mm}
+  { \germanbook_english_index:nn {#1}{#2} }
+\ExplSyntaxOff
 
 \makeatletter
 \pgfkeys{
@@ -101,8 +207,8 @@
     \verb@originalendtabular
   }%
   \phantomsection
-  \expandafter\index\expandafter[german]{\verb@name}%
-  \expandafter\index\expandafter[english]{\verb@english{} (\verb@name)}%
+  \germanbookgermanindex{\verb@name}%
+  \germanbookenglishindex{\verb@english}{\verb@name}%
   {\Large\bfseries \verb@name} (\verb@english) \hfill
   Type: \textbf{\verb@type} \hfill
   Auxiliary Verb: \textbf{\verb@auxiliary}%
@@ -117,8 +223,8 @@
 % A compact related-verb row remains discoverable in both indexes even though
 % it no longer needs a full standalone conjugation table.
 \newcommand{\relatedverb}[3]{%
-  \index[german]{#1}%
-  \index[english]{#2 (#1)}%
+  \germanbookgermanindex{#1}%
+  \germanbookenglishindex{#2}{#1}%
   \textbf{#3}%
 }
 
