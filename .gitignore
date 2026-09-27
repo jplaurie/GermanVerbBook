@@ -10,3 +10,6 @@
 *.pdf
 !GermanBook.pdf
 *.synctex.gz
+.venv/
+__pycache__/
+/build/

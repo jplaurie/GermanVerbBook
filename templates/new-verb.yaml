@@ -1,0 +1,49 @@
+# Copy this record into the appropriate chapter/group in verbs/verbs.yaml.
+- lemma: lernen
+  english: to learn
+  grammar:
+    type: regular
+    auxiliaries:
+      - haben
+    style: default
+  conjugation:
+    present:
+      ich: lerne
+      du: lernst
+      er_sie_es: lernt
+      wir: lernen
+      ihr: lernt
+      sie_sie: lernen
+    preterite:
+      ich: lernte
+      du: lerntest
+      er_sie_es: lernte
+      wir: lernten
+      ihr: lerntet
+      sie_sie: lernten
+    subjunctive_ii: null
+    imperative:
+      du: lern(e) (du)!
+      wir: lernen wir!
+      ihr: lernt (ihr)!
+      formal: lernen Sie!
+  compound_tenses:
+    perfect:
+      auxiliaries: [haben]
+      reflexive: false
+      form: gelernt
+    future:
+      auxiliaries: [werden]
+      reflexive: false
+      form: lernen
+    pluperfect:
+      auxiliaries: [hatten]
+      reflexive: false
+      form: gelernt
+  prepositional_uses:
+    - patterns:
+        - phrase: lernen aus
+          government: [dative]
+      meaning: to learn from
+  separable_compounds: []
+  bottom_layout: inline
