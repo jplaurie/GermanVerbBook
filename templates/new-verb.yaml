@@ -1,11 +1,14 @@
 # Copy this record into the appropriate chapter/group in verbs/verbs.yaml.
+# Choose grammar.style by object/reflexive case, not prepositional case:
+# acc = blue, dat = green, accdat = purple, default = grey.
+# See README.md and docs/verb-case-colours.md for the scope of the colours.
 - lemma: lernen
   english: to learn
   grammar:
     type: regular
     auxiliaries:
       - haben
-    style: default
+    style: acc
   conjugation:
     present:
       ich: lerne

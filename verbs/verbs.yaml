@@ -145,30 +145,25 @@ chapters:
           form: gehabt
       prepositional_uses:
       - patterns:
-        - phrase: haben an
+        - phrase: Interesse haben an
           government:
           - dative
-        meaning: to have a problem / interest / fault
+        meaning: to be interested in
       - patterns:
-        - phrase: haben für
+        - phrase: Verständnis haben für
           government:
           - accusative
-        meaning: to have for / feel towards
+        meaning: to have understanding for
       - patterns:
-        - phrase: haben von
+        - phrase: etwas haben von
           government:
           - dative
-        meaning: to have heard / get from
+        meaning: to get something out of / benefit from
       - patterns:
-        - phrase: haben auf
+        - phrase: Lust haben auf
           government:
           - accusative
-        meaning: to be in the mood for
-      - patterns:
-        - phrase: haben vor
-          government:
-          - dative
-        meaning: to plan / intend
+        meaning: to feel like / be in the mood for
       separable_compounds:
       - lemma: anhaben
         english: to have on
@@ -236,7 +231,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: lasse
@@ -611,7 +606,7 @@ chapters:
           sie_sie: änderten sich
         subjunctive_ii: null
         imperative:
-          du: änder(e) (du) dich!
+          du: ändere (du) dich!
           wir: ändern wir uns!
           ihr: ändert (ihr) euch!
           formal: ändern Sie sich!
@@ -658,7 +653,7 @@ chapters:
           sie_sie: ärgerten sich
         subjunctive_ii: null
         imperative:
-          du: ärger(e) (du) dich!
+          du: ärgere (du) dich!
           wir: ärgern wir uns!
           ihr: ärgert (ihr) euch!
           formal: ärgern Sie sich!
@@ -692,7 +687,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: amüsiere mich
@@ -733,13 +728,60 @@ chapters:
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
+    - lemma: sich anspannen
+      english: to tense up
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: spanne mich an
+          du: spannst dich an
+          er_sie_es: spannt sich an
+          wir: spannen uns an
+          ihr: spannt euch an
+          sie_sie: spannen sich an
+        preterite:
+          ich: spannte mich an
+          du: spanntest dich an
+          er_sie_es: spannte sich an
+          wir: spannten uns an
+          ihr: spanntet euch an
+          sie_sie: spannten sich an
+        subjunctive_ii: null
+        imperative:
+          du: spann(e) (du) dich an!
+          wir: spannen wir uns an!
+          ihr: spannt (ihr) euch an!
+          formal: spannen Sie sich an!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: true
+          form: angespannt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: true
+          form: anspannen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: true
+          form: angespannt
+      prepositional_uses: []
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: sich anstrengen
       english: to exert oneself
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: strenge mich an
@@ -786,7 +828,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: bedanke mich
@@ -843,7 +885,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: beeile mich
@@ -895,7 +937,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: befinde mich
@@ -947,7 +989,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: bemühe mich
@@ -1004,7 +1046,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: beschäftige mich
@@ -1056,7 +1098,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: beschwere mich
@@ -1108,7 +1150,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: beteilige mich
@@ -1160,7 +1202,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: bewege mich
@@ -1208,7 +1250,7 @@ chapters:
         - phrase: sich bewegen auf
           government:
           - accusative
-        meaning: to move toward
+        meaning: to move onto
       - patterns:
         - phrase: sich bewegen durch
           government:
@@ -1222,7 +1264,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: bewerbe mich
@@ -1331,7 +1373,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: drehe mich
@@ -1388,7 +1430,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: eigne mich
@@ -1445,7 +1487,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: einige mich
@@ -1507,7 +1549,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: engagiere mich
@@ -1564,7 +1606,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: entscheide mich
@@ -1621,7 +1663,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: entschließe mich
@@ -1730,7 +1772,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: entspanne mich
@@ -1792,7 +1834,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: entwickele mich
@@ -1849,28 +1891,24 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: ereigne mich
-          du: ereignest dich
+          ich: '-'
+          du: '-'
           er_sie_es: ereignet sich
-          wir: ereignen uns
-          ihr: ereignet euch
+          wir: '-'
+          ihr: '-'
           sie_sie: ereignen sich
         preterite:
-          ich: ereignete mich
-          du: ereignetest dich
+          ich: '-'
+          du: '-'
           er_sie_es: ereignete sich
-          wir: ereigneten uns
-          ihr: ereignetet euch
+          wir: '-'
+          ihr: '-'
           sie_sie: ereigneten sich
         subjunctive_ii: null
-        imperative:
-          du: ereigne (du) dich!
-          wir: ereignen wir uns!
-          ihr: ereignet (ihr) euch!
-          formal: ereignen Sie sich!
+        imperative: null
       compound_tenses:
         perfect:
           auxiliaries:
@@ -1896,7 +1934,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erhole mich
@@ -1953,7 +1991,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erinnere mich
@@ -1971,7 +2009,7 @@ chapters:
           sie_sie: erinnerten sich
         subjunctive_ii: null
         imperative:
-          du: erinner(e) (du) dich!
+          du: erinnere (du) dich!
           wir: erinnern wir uns!
           ihr: erinnert (ihr) euch!
           formal: erinnern Sie sich!
@@ -2005,7 +2043,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erkälte mich
@@ -2052,7 +2090,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erkundige mich
@@ -2109,7 +2147,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: ernähre mich
@@ -2166,7 +2204,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: freue mich
@@ -2223,7 +2261,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: füge mich
@@ -2325,7 +2363,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: fürchte mich
@@ -2382,7 +2420,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: gewöhne mich
@@ -2434,7 +2472,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: hüte mich
@@ -2491,7 +2529,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: interessiere mich
@@ -2543,7 +2581,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: irre mich
@@ -2652,7 +2690,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: konzentriere mich
@@ -2704,7 +2742,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: kümmere mich
@@ -2722,7 +2760,7 @@ chapters:
           sie_sie: kümmerten sich
         subjunctive_ii: null
         imperative:
-          du: kümmer(e) (du) dich!
+          du: kümmere (du) dich!
           wir: kümmern wir uns!
           ihr: kümmert (ihr) euch!
           formal: kümmern Sie sich!
@@ -2756,7 +2794,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: langweile mich
@@ -2855,28 +2893,24 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: lohne mich
-          du: lohnst dich
+          ich: '-'
+          du: '-'
           er_sie_es: lohnt sich
-          wir: lohnen uns
-          ihr: lohnt euch
+          wir: '-'
+          ihr: '-'
           sie_sie: lohnen sich
         preterite:
-          ich: lohnte mich
-          du: lohntest dich
+          ich: '-'
+          du: '-'
           er_sie_es: lohnte sich
-          wir: lohnten uns
-          ihr: lohntet euch
+          wir: '-'
+          ihr: '-'
           sie_sie: lohnten sich
         subjunctive_ii: null
-        imperative:
-          du: lohn (du) dich!
-          wir: lohnen wir uns!
-          ihr: lohnt (ihr) euch!
-          formal: lohnen Sie sich!
+        imperative: null
       compound_tenses:
         perfect:
           auxiliaries:
@@ -2902,7 +2936,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: melde mich
@@ -2965,7 +2999,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: acc
+        style: accdat
       conjugation:
         present:
           ich: merke mir
@@ -3012,7 +3046,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: nähere mich
@@ -3064,7 +3098,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: qualifiziere mich
@@ -3116,7 +3150,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: räche mich
@@ -3173,7 +3207,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: rege mich
@@ -3233,7 +3267,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: registriere mich
@@ -3342,7 +3376,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: schminke mich
@@ -3395,9 +3429,6 @@ chapters:
       - lemma: sich abschminken
         english: to remove one's make-up
         split_form: sich ab|schminken
-      - lemma: sich anschminken
-        english: to put on make-up
-        split_form: sich an|schminken
       bottom_layout: inline
     - lemma: sich schützen
       english: to protect oneself
@@ -3405,7 +3436,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: schütze mich
@@ -3462,7 +3493,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: sehne mich
@@ -3514,7 +3545,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: setze mich
@@ -3574,7 +3605,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: sorge mich
@@ -3626,7 +3657,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: acc
+        style: accdat
       conjugation:
         present:
           ich: stelle mich
@@ -3664,19 +3695,24 @@ chapters:
           - hatten
           reflexive: true
           form: gestellt
-      prepositional_uses: []
+      prepositional_uses:
+      - patterns:
+        - phrase: sich stellen
+          government:
+          - dative
+        meaning: to surrender to (e.g. the police)
       separable_compounds:
       - lemma: sich vorstellen
         english: to introduce oneself
         split_form: sich vor|stellen
       bottom_layout: inline
     - lemma: sich teilen
-      english: to share
+      english: to share something
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: teile mir
@@ -3716,10 +3752,11 @@ chapters:
           form: geteilt
       prepositional_uses:
       - patterns:
-        - phrase: sich teilen in
+        - phrase: sich teilen
           government:
+          - dative
           - accusative
-        meaning: to split into parts
+        meaning: to share something (e.g. a room)
       - patterns:
         - phrase: sich teilen mit
           government:
@@ -3751,7 +3788,7 @@ chapters:
           sie_sie: trafen sich
         subjunctive_ii: null
         imperative:
-          du: triff(e) (du) dich!
+          du: triff (du) dich!
           wir: treffen wir uns!
           ihr: trefft (ihr) euch!
           formal: treffen Sie sich!
@@ -3836,13 +3873,56 @@ chapters:
         meaning: to separate from someone / something
       separable_compounds: []
       bottom_layout: inline
+    - lemma: sich übergeben
+      english: to vomit / be sick
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: übergebe mich
+          du: übergibst dich
+          er_sie_es: übergibt sich
+          wir: übergeben uns
+          ihr: übergebt euch
+          sie_sie: übergeben sich
+        preterite:
+          ich: übergab mich
+          du: übergabst dich
+          er_sie_es: übergab sich
+          wir: übergaben uns
+          ihr: übergabt euch
+          sie_sie: übergaben sich
+        subjunctive_ii: null
+        imperative: null
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: true
+          form: übergeben
+        future:
+          auxiliaries:
+          - werden
+          reflexive: true
+          form: übergeben
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: true
+          form: übergeben
+      prepositional_uses: []
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: sich unterhalten
       english: to chat
       grammar:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: unterhalte mich
@@ -3899,7 +3979,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verabrede mich
@@ -3945,13 +4025,65 @@ chapters:
         meaning: to arrange with
       separable_compounds: []
       bottom_layout: inline
+    - lemma: sich verabschieden
+      english: to say goodbye
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: verabschiede mich
+          du: verabschiedest dich
+          er_sie_es: verabschiedet sich
+          wir: verabschieden uns
+          ihr: verabschiedet euch
+          sie_sie: verabschieden sich
+        preterite:
+          ich: verabschiedete mich
+          du: verabschiedetest dich
+          er_sie_es: verabschiedete sich
+          wir: verabschiedeten uns
+          ihr: verabschiedetet euch
+          sie_sie: verabschiedeten sich
+        subjunctive_ii: null
+        imperative:
+          du: verabschiede (du) dich!
+          wir: verabschieden wir uns!
+          ihr: verabschiedet (ihr) euch!
+          formal: verabschieden Sie sich!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: true
+          form: verabschiedet
+        future:
+          auxiliaries:
+          - werden
+          reflexive: true
+          form: verabschieden
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: true
+          form: verabschiedet
+      prepositional_uses:
+      - patterns:
+        - phrase: sich verabschieden von
+          government:
+          - dative
+        meaning: to say goodbye to
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: sich vergnügen
       english: to enjoy oneself
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: vergnüge mich
@@ -3998,7 +4130,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verhalte mich
@@ -4045,7 +4177,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verlasse mich
@@ -4097,7 +4229,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verlaufe mich
@@ -4144,7 +4276,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verletze mich
@@ -4201,7 +4333,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verliebe mich
@@ -4248,12 +4380,12 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: sich verschreiben
-      english: to commit / write incorrectly
+      english: to make a typo / devote oneself
       grammar:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: verschreibe mich
@@ -4291,7 +4423,12 @@ chapters:
           - hatten
           reflexive: true
           form: verschrieben
-      prepositional_uses: []
+      prepositional_uses:
+      - patterns:
+        - phrase: sich verschreiben
+          government:
+          - dative
+        meaning: to devote oneself to a cause
       separable_compounds: []
       bottom_layout: inline
     - lemma: sich verstehen
@@ -4404,7 +4541,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verwähle mich
@@ -4498,10 +4635,10 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: weigre mich
+          ich: weigere mich
           du: weigerst dich
           er_sie_es: weigert sich
           wir: weigern uns
@@ -4516,7 +4653,7 @@ chapters:
           sie_sie: weigerten sich
         subjunctive_ii: null
         imperative:
-          du: weigre (du) dich!
+          du: weigere (du) dich!
           wir: weigern wir uns!
           ihr: weigert (ihr) euch!
           formal: weigern Sie sich!
@@ -4545,7 +4682,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: wundere mich
@@ -4563,7 +4700,7 @@ chapters:
           sie_sie: wunderten sich
         subjunctive_ii: null
         imperative:
-          du: wunder(e) (du) dich!
+          du: wundere (du) dich!
           wir: wundern wir uns!
           ihr: wundert (ihr) euch!
           formal: wundern Sie sich!
@@ -4592,7 +4729,7 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: sich ziehen
-      english: to drag
+      english: to drag on / pull oneself
       grammar:
         type: irregular
         auxiliaries:
@@ -4655,7 +4792,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: abonniere
@@ -4702,7 +4839,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: achte
@@ -4777,7 +4914,7 @@ chapters:
           sie_sie: änderten
         subjunctive_ii: null
         imperative:
-          du: änder(e) (du)!
+          du: ändere (du)!
           wir: ändern wir!
           ihr: ändert (ihr)!
           formal: ändern Sie!
@@ -4806,7 +4943,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: ärgere
@@ -4824,7 +4961,7 @@ chapters:
           sie_sie: ärgerten
         subjunctive_ii: null
         imperative:
-          du: ärger(e) (du)!
+          du: ärgere (du)!
           wir: ärgern wir!
           ihr: ärgert (ihr)!
           formal: ärgern Sie!
@@ -4853,12 +4990,12 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: ahmen
-      english: to imitate
+      english: to imitate; obsolete
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: ahme
@@ -4908,7 +5045,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: akzeptiere
@@ -4960,7 +5097,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: analysiere
@@ -4999,6 +5136,110 @@ chapters:
           reflexive: false
           form: analysiert
       prepositional_uses: []
+      separable_compounds: []
+      bottom_layout: inline
+    - lemma: anspannen
+      english: to tense / tighten
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: spanne an
+          du: spannst an
+          er_sie_es: spannt an
+          wir: spannen an
+          ihr: spannt an
+          sie_sie: spannen an
+        preterite:
+          ich: spannte an
+          du: spanntest an
+          er_sie_es: spannte an
+          wir: spannten an
+          ihr: spanntet an
+          sie_sie: spannten an
+        subjunctive_ii: null
+        imperative:
+          du: spann(e) (du) an!
+          wir: spannen wir an!
+          ihr: spannt (ihr) an!
+          formal: spannen Sie an!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: angespannt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: anspannen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: angespannt
+      prepositional_uses:
+      - patterns:
+        - phrase: anspannen
+          government:
+          - accusative
+        meaning: to tense muscles / tighten
+      separable_compounds: []
+      bottom_layout: inline
+    - lemma: antreiben
+      english: to drive / spur on
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: treibe an
+          du: treibst an
+          er_sie_es: treibt an
+          wir: treiben an
+          ihr: treibt an
+          sie_sie: treiben an
+        preterite:
+          ich: trieb an
+          du: triebst an
+          er_sie_es: trieb an
+          wir: trieben an
+          ihr: triebt an
+          sie_sie: trieben an
+        subjunctive_ii: null
+        imperative:
+          du: treib (du) an!
+          wir: treiben wir an!
+          ihr: treibt (ihr) an!
+          formal: treiben Sie an!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: angetrieben
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: antreiben
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: angetrieben
+      prepositional_uses:
+      - patterns:
+        - phrase: antreiben zu
+          government:
+          - dative
+        meaning: to spur someone on to
       separable_compounds: []
       bottom_layout: inline
     - lemma: antworten
@@ -5077,7 +5318,7 @@ chapters:
           sie_sie: arbeiteten
         subjunctive_ii: null
         imperative:
-          du: arbeit(e) (du)!
+          du: arbeite (du)!
           wir: arbeiten wir!
           ihr: arbeitet (ihr)!
           formal: arbeiten Sie!
@@ -5116,7 +5357,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: atme
@@ -5181,15 +5422,125 @@ chapters:
         english: to inhale
         split_form: ein|atmen
       bottom_layout: inline
+    - lemma: aufschreiben
+      english: to write down / note
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: schreibe auf
+          du: schreibst auf
+          er_sie_es: schreibt auf
+          wir: schreiben auf
+          ihr: schreibt auf
+          sie_sie: schreiben auf
+        preterite:
+          ich: schrieb auf
+          du: schriebst auf
+          er_sie_es: schrieb auf
+          wir: schrieben auf
+          ihr: schriebt auf
+          sie_sie: schrieben auf
+        subjunctive_ii: null
+        imperative:
+          du: schreib(e) (du) auf!
+          wir: schreiben wir auf!
+          ihr: schreibt (ihr) auf!
+          formal: schreiben Sie auf!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: aufgeschrieben
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: aufschreiben
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: aufgeschrieben
+      prepositional_uses:
+      - patterns:
+        - phrase: aufschreiben auf
+          government:
+          - accusative
+        meaning: to write down on
+      separable_compounds: []
+      bottom_layout: inline
+    - lemma: aushändigen
+      english: to hand over / deliver
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: accdat
+      conjugation:
+        present:
+          ich: händige aus
+          du: händigst aus
+          er_sie_es: händigt aus
+          wir: händigen aus
+          ihr: händigt aus
+          sie_sie: händigen aus
+        preterite:
+          ich: händigte aus
+          du: händigtest aus
+          er_sie_es: händigte aus
+          wir: händigten aus
+          ihr: händigtet aus
+          sie_sie: händigten aus
+        subjunctive_ii: null
+        imperative:
+          du: händig(e) (du) aus!
+          wir: händigen wir aus!
+          ihr: händigt (ihr) aus!
+          formal: händigen Sie aus!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: ausgehändigt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: aushändigen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: ausgehändigt
+      prepositional_uses:
+      - patterns:
+        - phrase: aushändigen
+          government:
+          - dative
+          - accusative
+        meaning: to hand something over to someone
+      - patterns:
+        - phrase: aushändigen an
+          government:
+          - accusative
+        meaning: to hand over to
+      separable_compounds: []
+      bottom_layout: inline
   - title: B
     verbs:
     - lemma: backen
       english: to bake
       grammar:
-        type: regular
+        type: variable
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: backe
@@ -5236,7 +5587,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: bade
@@ -5288,7 +5639,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: bastle
@@ -5404,7 +5755,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: beachte
@@ -5503,7 +5854,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: beantworte
@@ -5597,7 +5948,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: bediene
@@ -5644,7 +5995,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: beeinflusse
@@ -5691,7 +6042,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: beende
@@ -5732,13 +6083,70 @@ chapters:
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
+    - lemma: befreien
+      english: to free / release / exempt
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: befreie
+          du: befreist
+          er_sie_es: befreit
+          wir: befreien
+          ihr: befreit
+          sie_sie: befreien
+        preterite:
+          ich: befreite
+          du: befreitest
+          er_sie_es: befreite
+          wir: befreiten
+          ihr: befreitet
+          sie_sie: befreiten
+        subjunctive_ii: null
+        imperative:
+          du: befrei(e) (du)!
+          wir: befreien wir!
+          ihr: befreit (ihr)!
+          formal: befreien Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: befreit
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: befreien
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: befreit
+      prepositional_uses:
+      - patterns:
+        - phrase: befreien aus
+          government:
+          - dative
+        meaning: to free from confinement
+      - patterns:
+        - phrase: befreien von
+          government:
+          - dative
+        meaning: to free / exempt from
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: begegnen
       english: to meet / encounter
       grammar:
         type: regular
         auxiliaries:
         - sein
-        style: default
+        style: dat
       conjugation:
         present:
           ich: begegne
@@ -5832,7 +6240,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: begleite
@@ -5879,7 +6287,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: begründe
@@ -5973,7 +6381,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: behalte
@@ -6020,7 +6428,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: behandle
@@ -6077,7 +6485,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: behaupte
@@ -6124,10 +6532,10 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: behindre
+          ich: behindere
           du: behinderst
           er_sie_es: behindert
           wir: behindern
@@ -6142,7 +6550,7 @@ chapters:
           sie_sie: behinderten
         subjunctive_ii: null
         imperative:
-          du: behindre (du)!
+          du: behindere (du)!
           wir: behindern wir!
           ihr: behindert (ihr)!
           formal: behindern Sie!
@@ -6171,7 +6579,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: beiße
@@ -6281,7 +6689,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: belaste
@@ -6390,7 +6798,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: beleidige
@@ -6484,7 +6892,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: benötige
@@ -6687,7 +7095,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: berechne
@@ -6734,7 +7142,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: acc
+        style: accdat
       conjugation:
         present:
           ich: bereite
@@ -6793,7 +7201,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: berichte
@@ -6840,7 +7248,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: beruhige
@@ -6887,7 +7295,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: beschädige
@@ -6980,13 +7388,70 @@ chapters:
         meaning: to decide something
       separable_compounds: []
       bottom_layout: inline
+    - lemma: beschränken
+      english: to restrict / confine
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: beschränke
+          du: beschränkst
+          er_sie_es: beschränkt
+          wir: beschränken
+          ihr: beschränkt
+          sie_sie: beschränken
+        preterite:
+          ich: beschränkte
+          du: beschränktest
+          er_sie_es: beschränkte
+          wir: beschränkten
+          ihr: beschränktet
+          sie_sie: beschränkten
+        subjunctive_ii: null
+        imperative:
+          du: beschränk(e) (du)!
+          wir: beschränken wir!
+          ihr: beschränkt (ihr)!
+          formal: beschränken Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: beschränkt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: beschränken
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: beschränkt
+      prepositional_uses:
+      - patterns:
+        - phrase: beschränken auf
+          government:
+          - accusative
+        meaning: to limit to
+      - patterns:
+        - phrase: beschränken in
+          government:
+          - dative
+        meaning: to restrict someone in
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: beschreiben
       english: to describe
       grammar:
         type: irregular
         auxiliaries:
         - haben
-        style: acc
+        style: accdat
       conjugation:
         present:
           ich: beschreibe
@@ -7085,7 +7550,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: besichtige
@@ -7112,7 +7577,7 @@ chapters:
           auxiliaries:
           - haben
           reflexive: false
-          form: besessen
+          form: besichtigt
         future:
           auxiliaries:
           - werden
@@ -7122,7 +7587,7 @@ chapters:
           auxiliaries:
           - hatten
           reflexive: false
-          form: besessen
+          form: besichtigt
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
@@ -7132,7 +7597,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: besitze
@@ -7179,7 +7644,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: besorge
@@ -7226,7 +7691,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: bespreche
@@ -7273,7 +7738,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: acc
+        style: accdat
       conjugation:
         present:
           ich: bestätige
@@ -7419,7 +7884,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: bestrafe
@@ -7466,7 +7931,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: besuche
@@ -7516,18 +7981,18 @@ chapters:
         style: acc
       conjugation:
         present:
-          ich: betrage
-          du: beträgst
+          ich: '-'
+          du: '-'
           er_sie_es: beträgt
-          wir: betragen
-          ihr: betragt
+          wir: '-'
+          ihr: '-'
           sie_sie: betragen
         preterite:
-          ich: betrug
-          du: betrugst
+          ich: '-'
+          du: '-'
           er_sie_es: betrug
-          wir: betrugen
-          ihr: betrugt
+          wir: '-'
+          ihr: '-'
           sie_sie: betrugen
         subjunctive_ii: null
         imperative: null
@@ -7548,6 +8013,58 @@ chapters:
           reflexive: false
           form: betragen
       prepositional_uses: []
+      separable_compounds: []
+      bottom_layout: inline
+    - lemma: betreiben
+      english: to operate / run / pursue
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: betreibe
+          du: betreibst
+          er_sie_es: betreibt
+          wir: betreiben
+          ihr: betreibt
+          sie_sie: betreiben
+        preterite:
+          ich: betrieb
+          du: betriebst
+          er_sie_es: betrieb
+          wir: betrieben
+          ihr: betriebt
+          sie_sie: betrieben
+        subjunctive_ii: null
+        imperative:
+          du: betreib (du)!
+          wir: betreiben wir!
+          ihr: betreibt (ihr)!
+          formal: betreiben Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: betrieben
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: betreiben
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: betrieben
+      prepositional_uses:
+      - patterns:
+        - phrase: betreiben
+          government:
+          - accusative
+        meaning: to run a business / pursue an activity
       separable_compounds: []
       bottom_layout: inline
     - lemma: betreuen
@@ -7613,7 +8130,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: betrüge
@@ -7660,7 +8177,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: beweise
@@ -7796,7 +8313,7 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: beziehen
-      english: to obtain / refer to
+      english: to obtain / occupy
       grammar:
         type: irregular
         auxiliaries:
@@ -7861,7 +8378,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: biege
@@ -7911,7 +8428,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: biete
@@ -7966,13 +8483,76 @@ chapters:
         english: to offer
         split_form: an|bieten
       bottom_layout: inline
+    - lemma: binden
+      english: to tie / bind
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: binde
+          du: bindest
+          er_sie_es: bindet
+          wir: binden
+          ihr: bindet
+          sie_sie: binden
+        preterite:
+          ich: band
+          du: bandest
+          er_sie_es: band
+          wir: banden
+          ihr: bandet
+          sie_sie: banden
+        subjunctive_ii: null
+        imperative:
+          du: bind(e) (du)!
+          wir: binden wir!
+          ihr: bindet (ihr)!
+          formal: binden Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: gebunden
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: binden
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: gebunden
+      prepositional_uses:
+      - patterns:
+        - phrase: binden an
+          government:
+          - accusative
+        meaning: to tie / bind to
+      - patterns:
+        - phrase: binden mit
+          government:
+          - dative
+        meaning: to tie with
+      separable_compounds:
+      - lemma: anbinden
+        english: to tie to / tether
+        split_form: an|binden
+      - lemma: festbinden
+        english: to tie securely
+        split_form: fest|binden
+      bottom_layout: stacked
     - lemma: bitten
       english: to ask / request
       grammar:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: bitte
@@ -8275,7 +8855,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: brate
@@ -8370,7 +8950,7 @@ chapters:
         auxiliaries:
         - haben
         - sein
-        style: default
+        style: acc
       conjugation:
         present:
           ich: breche
@@ -8422,7 +9002,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: bremse
@@ -8513,10 +9093,10 @@ chapters:
     - lemma: bringen
       english: to bring
       grammar:
-        type: irregular
+        type: mixed
         auxiliaries:
         - haben
-        style: acc
+        style: accdat
       conjugation:
         present:
           ich: bringe
@@ -8564,7 +9144,7 @@ chapters:
         - phrase: bringen auf
           government:
           - accusative
-        meaning: to raise / summon
+        meaning: to bring onto
       - patterns:
         - phrase: bringen für
           government:
@@ -8681,7 +9261,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: buchstabiere
@@ -8730,7 +9310,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: checke
@@ -8779,7 +9359,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: dat
       conjugation:
         present:
           ich: danke
@@ -8829,25 +9409,21 @@ chapters:
         style: default
       conjugation:
         present:
-          ich: dauere
-          du: dauerst
+          ich: '-'
+          du: '-'
           er_sie_es: dauert
-          wir: dauern
-          ihr: dauert
+          wir: '-'
+          ihr: '-'
           sie_sie: dauern
         preterite:
-          ich: dauerte
-          du: dauertest
+          ich: '-'
+          du: '-'
           er_sie_es: dauerte
-          wir: dauerten
-          ihr: dauertet
+          wir: '-'
+          ihr: '-'
           sie_sie: dauerten
         subjunctive_ii: null
-        imperative:
-          du: dauere (du)!
-          wir: dauern wir!
-          ihr: dauert (ihr)!
-          formal: dauern Sie!
+        imperative: null
       compound_tenses:
         perfect:
           auxiliaries:
@@ -8880,13 +9456,65 @@ chapters:
         english: to continue / persist
         split_form: an|dauern
       bottom_layout: inline
+    - lemma: dehnen
+      english: to stretch
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: dehne
+          du: dehnst
+          er_sie_es: dehnt
+          wir: dehnen
+          ihr: dehnt
+          sie_sie: dehnen
+        preterite:
+          ich: dehnte
+          du: dehntest
+          er_sie_es: dehnte
+          wir: dehnten
+          ihr: dehntet
+          sie_sie: dehnten
+        subjunctive_ii: null
+        imperative:
+          du: dehn(e) (du)!
+          wir: dehnen wir!
+          ihr: dehnt (ihr)!
+          formal: dehnen Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: gedehnt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: dehnen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: gedehnt
+      prepositional_uses:
+      - patterns:
+        - phrase: dehnen
+          government:
+          - accusative
+        meaning: to stretch muscles / material
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: dekorieren
       english: to decorate
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: dekoriere
@@ -8933,7 +9561,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: demonstriere
@@ -9090,7 +9718,7 @@ chapters:
         style: default
       conjugation:
         present:
-          ich: donnre
+          ich: donnere
           du: donnerst
           er_sie_es: donnert
           wir: donnern
@@ -9105,7 +9733,7 @@ chapters:
           sie_sie: donnerten
         subjunctive_ii: null
         imperative:
-          du: donnre (du)!
+          du: donnere (du)!
           wir: donnern wir!
           ihr: donnert (ihr)!
           formal: donnern Sie!
@@ -9134,7 +9762,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: drehe
@@ -9208,7 +9836,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: drucke
@@ -9258,7 +9886,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: drücke
@@ -9305,7 +9933,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: dusche
@@ -9352,7 +9980,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: duze
@@ -9450,13 +10078,127 @@ chapters:
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
+    - lemma: einschränken
+      english: to restrict / limit
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: schränke ein
+          du: schränkst ein
+          er_sie_es: schränkt ein
+          wir: schränken ein
+          ihr: schränkt ein
+          sie_sie: schränken ein
+        preterite:
+          ich: schränkte ein
+          du: schränktest ein
+          er_sie_es: schränkte ein
+          wir: schränkten ein
+          ihr: schränktet ein
+          sie_sie: schränkten ein
+        subjunctive_ii: null
+        imperative:
+          du: schränk(e) (du) ein!
+          wir: schränken wir ein!
+          ihr: schränkt (ihr) ein!
+          formal: schränken Sie ein!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: eingeschränkt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: einschränken
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: eingeschränkt
+      prepositional_uses:
+      - patterns:
+        - phrase: einschränken in
+          government:
+          - dative
+        meaning: to restrict someone in
+      - patterns:
+        - phrase: einschränken auf
+          government:
+          - accusative
+        meaning: to limit to
+      separable_compounds: []
+      bottom_layout: inline
+    - lemma: einsperren
+      english: to lock up / lock in
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: sperre ein
+          du: sperrst ein
+          er_sie_es: sperrt ein
+          wir: sperren ein
+          ihr: sperrt ein
+          sie_sie: sperren ein
+        preterite:
+          ich: sperrte ein
+          du: sperrtest ein
+          er_sie_es: sperrte ein
+          wir: sperrten ein
+          ihr: sperrtet ein
+          sie_sie: sperrten ein
+        subjunctive_ii: null
+        imperative:
+          du: sperr(e) (du) ein!
+          wir: sperren wir ein!
+          ihr: sperrt (ihr) ein!
+          formal: sperren Sie ein!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: eingesperrt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: einsperren
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: eingesperrt
+      prepositional_uses:
+      - patterns:
+        - phrase: einsperren in
+          government:
+          - accusative
+        meaning: to lock someone into a room
+      - patterns:
+        - phrase: einsperren in
+          government:
+          - dative
+        meaning: to keep someone locked in a room
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: empfangen
       english: to receive
       grammar:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: empfange
@@ -9503,7 +10245,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: empfehle
@@ -9754,7 +10496,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: enthalte
@@ -9801,7 +10543,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: entlasse
@@ -9905,7 +10647,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: entsorge
@@ -9954,6 +10696,58 @@ chapters:
           government:
           - dative
         meaning: to dispose of in
+      separable_compounds: []
+      bottom_layout: inline
+    - lemma: entspannen
+      english: to relax / ease tension
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: entspanne
+          du: entspannst
+          er_sie_es: entspannt
+          wir: entspannen
+          ihr: entspannt
+          sie_sie: entspannen
+        preterite:
+          ich: entspannte
+          du: entspanntest
+          er_sie_es: entspannte
+          wir: entspannten
+          ihr: entspanntet
+          sie_sie: entspannten
+        subjunctive_ii: null
+        imperative:
+          du: entspann(e) (du)!
+          wir: entspannen wir!
+          ihr: entspannt (ihr)!
+          formal: entspannen Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: entspannt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: entspannen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: entspannt
+      prepositional_uses:
+      - patterns:
+        - phrase: entspannen
+          government:
+          - accusative
+        meaning: to relax muscles / ease a situation
       separable_compounds: []
       bottom_layout: inline
     - lemma: entstehen
@@ -10009,7 +10803,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: enttäusche
@@ -10056,7 +10850,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: entzünde
@@ -10155,7 +10949,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erfinde
@@ -10202,28 +10996,24 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: erfordre
-          du: erforderst
+          ich: '-'
+          du: '-'
           er_sie_es: erfordert
-          wir: erfordern
-          ihr: erfordert
+          wir: '-'
+          ihr: '-'
           sie_sie: erfordern
         preterite:
-          ich: erforderte
-          du: erfordertest
+          ich: '-'
+          du: '-'
           er_sie_es: erforderte
-          wir: erforderten
-          ihr: erfordertet
+          wir: '-'
+          ihr: '-'
           sie_sie: erforderten
         subjunctive_ii: null
-        imperative:
-          du: erfordre (du)!
-          wir: erfordern wir!
-          ihr: erfordert (ihr)!
-          formal: erfordern Sie!
+        imperative: null
       compound_tenses:
         perfect:
           auxiliaries:
@@ -10249,7 +11039,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: erfülle
@@ -10296,7 +11086,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: ergänze
@@ -10348,7 +11138,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erhalte
@@ -10405,7 +11195,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erhöhe
@@ -10447,7 +11237,7 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: erinnern
-      english: to remember
+      english: to remind
       grammar:
         type: regular
         auxiliaries:
@@ -10470,7 +11260,7 @@ chapters:
           sie_sie: erinnerten
         subjunctive_ii: null
         imperative:
-          du: erinner(e) (du)!
+          du: erinnere (du)!
           wir: erinnern wir!
           ihr: erinnert (ihr)!
           formal: erinnern Sie!
@@ -10496,10 +11286,10 @@ chapters:
     - lemma: erkennen
       english: to recognise
       grammar:
-        type: regular
+        type: mixed
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erkenne
@@ -10549,7 +11339,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: erkläre
@@ -10643,7 +11433,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: acc
+        style: accdat
       conjugation:
         present:
           ich: erlaube
@@ -10737,7 +11527,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erledige
@@ -10784,15 +11574,15 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: erleichtern
-      english: to facilitate
+      english: to make easier / relieve
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
-          ich: erleichtre
+          ich: erleichtere
           du: erleichterst
           er_sie_es: erleichtert
           wir: erleichtern
@@ -10807,7 +11597,7 @@ chapters:
           sie_sie: erleichterten
         subjunctive_ii: null
         imperative:
-          du: erleichtre (du)!
+          du: erleichtere (du)!
           wir: erleichtern wir!
           ihr: erleichtert (ihr)!
           formal: erleichtern Sie!
@@ -10925,12 +11715,12 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: eröffnen
-      english: to open / inaugurate
+      english: to open / disclose
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: eröffne
@@ -10974,11 +11764,6 @@ chapters:
           government:
           - accusative
         meaning: to open for
-      - patterns:
-        - phrase: eröffnen zu
-          government:
-          - dative
-        meaning: to inaugurate at / on
       separable_compounds: []
       bottom_layout: inline
     - lemma: erreichen
@@ -11029,7 +11814,7 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: erscheinen
-      english: to appear
+      english: to appear / seem (to someone)
       grammar:
         type: irregular
         auxiliaries:
@@ -11086,6 +11871,7 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: erschrecken (intransitive)
+      display_name: erschrecken
       english: to be startled
       grammar:
         type: irregular
@@ -11133,12 +11919,13 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: erschrecken (transitive)
+      display_name: erschrecken
       english: to frighten / scare
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erschrecke
@@ -11185,7 +11972,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: ersetze
@@ -11242,7 +12029,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erstelle
@@ -11299,7 +12086,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erwarte
@@ -11369,7 +12156,7 @@ chapters:
           sie_sie: erweiterten
         subjunctive_ii: null
         imperative:
-          du: erweiter(e) (du)!
+          du: erweitere (du)!
           wir: erweitern wir!
           ihr: erweitert (ihr)!
           formal: erweitern Sie!
@@ -11397,13 +12184,65 @@ chapters:
         meaning: to expand by
       separable_compounds: []
       bottom_layout: inline
+    - lemma: erwischen
+      english: to catch / catch in the act
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: erwische
+          du: erwischst
+          er_sie_es: erwischt
+          wir: erwischen
+          ihr: erwischt
+          sie_sie: erwischen
+        preterite:
+          ich: erwischte
+          du: erwischtest
+          er_sie_es: erwischte
+          wir: erwischten
+          ihr: erwischtet
+          sie_sie: erwischten
+        subjunctive_ii: null
+        imperative:
+          du: erwisch(e) (du)!
+          wir: erwischen wir!
+          ihr: erwischt (ihr)!
+          formal: erwischen Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: erwischt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: erwischen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: erwischt
+      prepositional_uses:
+      - patterns:
+        - phrase: erwischen bei
+          government:
+          - dative
+        meaning: to catch someone doing something
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: erzählen
       english: to tell
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: erzähle
@@ -11450,7 +12289,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: erziehe
@@ -11601,8 +12440,8 @@ chapters:
       - patterns:
         - phrase: fahren nach
           government:
-          - location
-        meaning: to go to city / country
+          - dative
+        meaning: to travel to a city / country
       - patterns:
         - phrase: fahren in
           government:
@@ -11665,7 +12504,7 @@ chapters:
         english: to drive away
         split_form: weg|fahren
       - lemma: zurückfahren
-        english: to bring back
+        english: to drive back
         split_form: zurück|fahren
       bottom_layout: inline
     - lemma: fallen
@@ -11822,9 +12661,6 @@ chapters:
       - lemma: wegfangen
         english: to snatch away
         split_form: weg|fangen
-      - lemma: überfangen
-        english: to cover / overtake
-        split_form: über|fangen
       bottom_layout: inline
     - lemma: fassen
       english: to grasp / hold
@@ -11832,7 +12668,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: fasse
@@ -11976,7 +12812,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: dat
       conjugation:
         present:
           ich: fehle
@@ -12041,7 +12877,7 @@ chapters:
           sie_sie: feierten
         subjunctive_ii: null
         imperative:
-          du: feier(e) (du)!
+          du: feiere (du)!
           wir: feiern wir!
           ihr: feiert (ihr)!
           formal: feiern Sie!
@@ -12064,13 +12900,174 @@ chapters:
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
+    - lemma: fesseln
+      english: to tie up / captivate
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: fessle
+          du: fesselst
+          er_sie_es: fesselt
+          wir: fesseln
+          ihr: fesselt
+          sie_sie: fesseln
+        preterite:
+          ich: fesselte
+          du: fesseltest
+          er_sie_es: fesselte
+          wir: fesselten
+          ihr: fesseltet
+          sie_sie: fesselten
+        subjunctive_ii: null
+        imperative:
+          du: fessle (du)!
+          wir: fesseln wir!
+          ihr: fesselt (ihr)!
+          formal: fesseln Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: gefesselt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: fesseln
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: gefesselt
+      prepositional_uses:
+      - patterns:
+        - phrase: fesseln an
+          government:
+          - accusative
+        meaning: to tie someone to
+      separable_compounds: []
+      bottom_layout: inline
+    - lemma: festhalten
+      english: to hold tight / detain / record
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: halte fest
+          du: hältst fest
+          er_sie_es: hält fest
+          wir: halten fest
+          ihr: haltet fest
+          sie_sie: halten fest
+        preterite:
+          ich: hielt fest
+          du: hieltst fest
+          er_sie_es: hielt fest
+          wir: hielten fest
+          ihr: hieltet fest
+          sie_sie: hielten fest
+        subjunctive_ii: null
+        imperative:
+          du: halt(e) (du) fest!
+          wir: halten wir fest!
+          ihr: haltet (ihr) fest!
+          formal: halten Sie fest!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: festgehalten
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: festhalten
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: festgehalten
+      prepositional_uses:
+      - patterns:
+        - phrase: festhalten
+          government:
+          - accusative
+        meaning: to hold or detain someone / record
+      - patterns:
+        - phrase: festhalten an
+          government:
+          - dative
+        meaning: to stick to / maintain
+      separable_compounds: []
+      bottom_layout: inline
+    - lemma: festnehmen
+      english: to arrest / take into custody
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: nehme fest
+          du: nimmst fest
+          er_sie_es: nimmt fest
+          wir: nehmen fest
+          ihr: nehmt fest
+          sie_sie: nehmen fest
+        preterite:
+          ich: nahm fest
+          du: nahmst fest
+          er_sie_es: nahm fest
+          wir: nahmen fest
+          ihr: nahmt fest
+          sie_sie: nahmen fest
+        subjunctive_ii: null
+        imperative:
+          du: nimm (du) fest!
+          wir: nehmen wir fest!
+          ihr: nehmt (ihr) fest!
+          formal: nehmen Sie fest!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: festgenommen
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: festnehmen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: festgenommen
+      prepositional_uses:
+      - patterns:
+        - phrase: festnehmen
+          government:
+          - accusative
+        meaning: to take someone into custody
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: finanzieren
       english: to finance / fund
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: finanziere
@@ -12167,10 +13164,10 @@ chapters:
           form: gefunden
       prepositional_uses:
       - patterns:
-        - phrase: finden für
+        - phrase: etwas finden für
           government:
           - accusative
-        meaning: to find suitable for
+        meaning: to find something for someone
       - patterns:
         - phrase: finden zu
           government:
@@ -12199,7 +13196,7 @@ chapters:
         auxiliaries:
         - haben
         - sein
-        style: default
+        style: acc
       conjugation:
         present:
           ich: fliege
@@ -12273,9 +13270,6 @@ chapters:
       - lemma: wegfliegen
         english: to fly away
         split_form: weg|fliegen
-      - lemma: überfliegen
-        english: to fly over
-        split_form: über|fliegen
       bottom_layout: inline
     - lemma: fliehen
       english: to flee
@@ -12343,25 +13337,21 @@ chapters:
         style: default
       conjugation:
         present:
-          ich: fließe
-          du: fließt
+          ich: '-'
+          du: '-'
           er_sie_es: fließt
-          wir: fließen
-          ihr: fließt
+          wir: '-'
+          ihr: '-'
           sie_sie: fließen
         preterite:
-          ich: floss
-          du: flossest
+          ich: '-'
+          du: '-'
           er_sie_es: floss
-          wir: flossen
-          ihr: flosst
+          wir: '-'
+          ihr: '-'
           sie_sie: flossen
         subjunctive_ii: null
-        imperative:
-          du: fließ (du)!
-          wir: fließen wir!
-          ihr: fließt (ihr)!
-          formal: fließen Sie!
+        imperative: null
       compound_tenses:
         perfect:
           auxiliaries:
@@ -12387,10 +13377,10 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: fördre
+          ich: fördere
           du: förderst
           er_sie_es: fördert
           wir: fördern
@@ -12405,7 +13395,7 @@ chapters:
           sie_sie: förderten
         subjunctive_ii: null
         imperative:
-          du: fördre (du)!
+          du: fördere (du)!
           wir: fördern wir!
           ihr: fördert (ihr)!
           formal: fördern Sie!
@@ -12489,10 +13479,10 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: fordre
+          ich: fordere
           du: forderst
           er_sie_es: fordert
           wir: fordern
@@ -12507,7 +13497,7 @@ chapters:
           sie_sie: forderten
         subjunctive_ii: null
         imperative:
-          du: fordre (du)!
+          du: fordere (du)!
           wir: fordern wir!
           ihr: fordert (ihr)!
           formal: fordern Sie!
@@ -12539,7 +13529,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: fotografiere
@@ -12627,13 +13617,65 @@ chapters:
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
+    - lemma: freilassen
+      english: to release / set free
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: lasse frei
+          du: lässt frei
+          er_sie_es: lässt frei
+          wir: lassen frei
+          ihr: lasst frei
+          sie_sie: lassen frei
+        preterite:
+          ich: ließ frei
+          du: ließest frei
+          er_sie_es: ließ frei
+          wir: ließen frei
+          ihr: ließt frei
+          sie_sie: ließen frei
+        subjunctive_ii: null
+        imperative:
+          du: lass(e) (du) frei!
+          wir: lassen wir frei!
+          ihr: lasst (ihr) frei!
+          formal: lassen Sie frei!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: freigelassen
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: freilassen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: freigelassen
+      prepositional_uses:
+      - patterns:
+        - phrase: freilassen
+          government:
+          - accusative
+        meaning: to release someone / an animal
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: fressen
       english: to eat — animals
       grammar:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: fresse
@@ -12696,6 +13738,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
+        - sein
         style: default
       conjugation:
         present:
@@ -12722,6 +13765,7 @@ chapters:
         perfect:
           auxiliaries:
           - haben
+          - sein
           reflexive: false
           form: gefroren
         future:
@@ -12732,9 +13776,15 @@ chapters:
         pluperfect:
           auxiliaries:
           - hatten
+          - waren
           reflexive: false
           form: gefroren
-      prepositional_uses: []
+      prepositional_uses:
+      - patterns:
+        - phrase: frieren vor
+          government:
+          - dative
+        meaning: to be cold / shiver with (hat gefroren)
       separable_compounds: []
       bottom_layout: inline
     - lemma: frühstücken
@@ -12790,7 +13840,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: füge
@@ -12843,7 +13893,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: führe
@@ -12917,7 +13967,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: fülle
@@ -13092,7 +14142,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: garantiere
@@ -13139,7 +14189,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: gebe
@@ -13201,7 +14251,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: gebrauche
@@ -13243,7 +14293,7 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: gefallen
-      english: to like
+      english: to please / appeal to
       grammar:
         type: irregular
         auxiliaries:
@@ -13295,7 +14345,7 @@ chapters:
         type: irregular
         auxiliaries:
         - sein
-        style: acc
+        style: default
       conjugation:
         present:
           ich: gehe
@@ -13338,11 +14388,8 @@ chapters:
       - lemma: ausgehen
         english: to go out / assume
         split_form: aus|gehen
-      - lemma: spazierengehen
-        english: to go for a walk
-        split_form: spazieren|gehen
       - lemma: umgehen
-        english: to deal with / go around
+        english: to deal with (mit + Dat)
         split_form: um|gehen
       - lemma: zugehen
         english: to approach / close
@@ -13401,28 +14448,24 @@ chapters:
         type: irregular
         auxiliaries:
         - sein
-        style: default
+        style: dat
       conjugation:
         present:
-          ich: gelinge
-          du: gelingst
+          ich: '-'
+          du: '-'
           er_sie_es: gelingt
-          wir: gelingen
-          ihr: gelingt
+          wir: '-'
+          ihr: '-'
           sie_sie: gelingen
         preterite:
-          ich: gelang
-          du: gelangst
+          ich: '-'
+          du: '-'
           er_sie_es: gelang
-          wir: gelangen
-          ihr: gelangt
+          wir: '-'
+          ihr: '-'
           sie_sie: gelangen
         subjunctive_ii: null
-        imperative:
-          du: geling (du)!
-          wir: gelingen wir!
-          ihr: gelingt (ihr)!
-          formal: gelingen Sie!
+        imperative: null
       compound_tenses:
         perfect:
           auxiliaries:
@@ -13505,7 +14548,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: genehmige
@@ -13599,7 +14642,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: dat
       conjugation:
         present:
           ich: genüge
@@ -13649,25 +14692,21 @@ chapters:
         style: default
       conjugation:
         present:
-          ich: geschehe
-          du: geschiehst
+          ich: '-'
+          du: '-'
           er_sie_es: geschieht
-          wir: geschehen
-          ihr: gescheht
+          wir: '-'
+          ihr: '-'
           sie_sie: geschehen
         preterite:
-          ich: geschah
-          du: geschahst
+          ich: '-'
+          du: '-'
           er_sie_es: geschah
-          wir: geschahen
-          ihr: geschaht
+          wir: '-'
+          ihr: '-'
           sie_sie: geschahen
         subjunctive_ii: null
-        imperative:
-          du: geschieh (du)!
-          wir: geschehen wir!
-          ihr: gescheht (ihr)!
-          formal: geschehen Sie!
+        imperative: null
       compound_tenses:
         perfect:
           auxiliaries:
@@ -13792,7 +14831,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: gieße
@@ -13855,7 +14894,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: glaube
@@ -13907,7 +14946,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: dat
       conjugation:
         present:
           ich: gratuliere
@@ -13954,7 +14993,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: greife
@@ -14047,7 +15086,7 @@ chapters:
         meaning: to grill on
       separable_compounds:
       - lemma: angrillen
-        english: to lightly grill / start grilling
+        english: to start the barbecue season / grill lightly
         split_form: an|grillen
       bottom_layout: inline
     - lemma: grillieren
@@ -14056,7 +15095,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: grilliere
@@ -14103,7 +15142,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: gründe
@@ -14150,7 +15189,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: grüße
@@ -14298,7 +15337,7 @@ chapters:
         type: variable
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: hänge
@@ -14336,7 +15375,17 @@ chapters:
           - hatten
           reflexive: false
           form: gehangen / gehängt
-      prepositional_uses: []
+      prepositional_uses:
+      - patterns:
+        - phrase: hängen
+          government:
+          - accusative
+        meaning: to hang something up (hängte / gehängt)
+      - patterns:
+        - phrase: hängen an
+          government:
+          - dative
+        meaning: 'to hang on (state: hing / gehangen)'
       separable_compounds:
       - lemma: abhängen
         english: to depend / hang
@@ -14391,7 +15440,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: halte
@@ -14434,9 +15483,6 @@ chapters:
       - lemma: aufhalten
         english: to stop
         split_form: auf|halten
-      - lemma: festhalten
-        english: to hold on / hold tight
-        split_form: fest|halten
       bottom_layout: inline
     - lemma: handeln
       english: to act / deal
@@ -14491,7 +15537,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: hasse
@@ -14538,7 +15584,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: hebe
@@ -14607,7 +15653,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: heirate
@@ -14706,7 +15752,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: heize
@@ -14794,13 +15840,65 @@ chapters:
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
+    - lemma: hindern
+      english: to prevent / hinder
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: hindere
+          du: hinderst
+          er_sie_es: hindert
+          wir: hindern
+          ihr: hindert
+          sie_sie: hindern
+        preterite:
+          ich: hinderte
+          du: hindertest
+          er_sie_es: hinderte
+          wir: hinderten
+          ihr: hindertet
+          sie_sie: hinderten
+        subjunctive_ii: null
+        imperative:
+          du: hindere (du)!
+          wir: hindern wir!
+          ihr: hindert (ihr)!
+          formal: hindern Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: gehindert
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: hindern
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: gehindert
+      prepositional_uses:
+      - patterns:
+        - phrase: hindern an
+          government:
+          - dative
+        meaning: to prevent someone from doing
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: hinterlassen
       english: to leave behind
       grammar:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: hinterlasse
@@ -15152,7 +16250,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: impfe
@@ -15248,11 +16346,58 @@ chapters:
           government:
           - accusative
         meaning: to inform about
+      separable_compounds: []
+      bottom_layout: inline
+    - lemma: inhaftieren
+      english: to imprison / detain
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: inhaftiere
+          du: inhaftierst
+          er_sie_es: inhaftiert
+          wir: inhaftieren
+          ihr: inhaftiert
+          sie_sie: inhaftieren
+        preterite:
+          ich: inhaftierte
+          du: inhaftiertest
+          er_sie_es: inhaftierte
+          wir: inhaftierten
+          ihr: inhaftiertet
+          sie_sie: inhaftierten
+        subjunctive_ii: null
+        imperative:
+          du: inhaftier(e) (du)!
+          wir: inhaftieren wir!
+          ihr: inhaftiert (ihr)!
+          formal: inhaftieren Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: inhaftiert
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: inhaftieren
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: inhaftiert
+      prepositional_uses:
       - patterns:
-        - phrase: informieren von
+        - phrase: inhaftieren
           government:
-          - dative
-        meaning: to inform of / from
+          - accusative
+        meaning: to put someone in custody
       separable_compounds: []
       bottom_layout: inline
     - lemma: installieren
@@ -15261,7 +16406,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: installiere
@@ -15318,7 +16463,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: integriere
@@ -15461,7 +16606,7 @@ chapters:
     - lemma: kennen
       english: to know (person/place)
       grammar:
-        type: regular
+        type: mixed
         auxiliaries:
         - haben
         style: acc
@@ -15652,7 +16797,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: klebe
@@ -15699,7 +16844,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: kleide
@@ -16076,7 +17221,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: knüpfe
@@ -16340,7 +17485,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: konsumiere
@@ -16382,12 +17527,12 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: kontrollieren
-      english: to control
+      english: to check / monitor
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: kontrolliere
@@ -16434,7 +17579,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: korrigiere
@@ -16484,18 +17629,18 @@ chapters:
         style: acc
       conjugation:
         present:
-          ich: '-'
-          du: '-'
+          ich: koste
+          du: kostest
           er_sie_es: kostet
-          wir: '-'
-          ihr: '-'
+          wir: kosten
+          ihr: kostet
           sie_sie: kosten
         preterite:
-          ich: '-'
-          du: '-'
+          ich: kostete
+          du: kostetest
           er_sie_es: kostete
-          wir: '-'
-          ihr: '-'
+          wir: kosteten
+          ihr: kostetet
           sie_sie: kosteten
         subjunctive_ii: null
         imperative: null
@@ -16524,7 +17669,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: kriege
@@ -16571,7 +17716,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: kritisiere
@@ -16665,7 +17810,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: kündige
@@ -16728,7 +17873,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: küsse
@@ -17020,17 +18165,8 @@ chapters:
         meaning: to land near / at
       separable_compounds:
       - lemma: anlanden
-        english: to arrive / land at a place
+        english: to bring ashore / dock
         split_form: an|landen
-      - lemma: auflanden
-        english: to land on – surface
-        split_form: auf|landen
-      - lemma: einlanden
-        english: to land in / enter
-        split_form: ein|landen
-      - lemma: zurücklanden
-        english: to land back / return
-        split_form: zurück|landen
       bottom_layout: inline
     - lemma: laufen
       english: to run
@@ -17132,7 +18268,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: lege
@@ -17203,7 +18339,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: lehne
@@ -17305,7 +18441,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: leihe
@@ -17361,12 +18497,12 @@ chapters:
         split_form: aus|leihen
       bottom_layout: inline
     - lemma: leisten
-      english: to perform / afford
+      english: to perform / achieve
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: leiste
@@ -17413,7 +18549,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: leite
@@ -17501,7 +18637,7 @@ chapters:
       prepositional_uses: []
       separable_compounds:
       - lemma: kennenlernen
-        english: to get to know each other
+        english: to get to know
         split_form: kennen|lernen
       bottom_layout: inline
     - lemma: lesen
@@ -17607,10 +18743,10 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
-          ich: liefre
+          ich: liefere
           du: lieferst
           er_sie_es: liefert
           wir: liefern
@@ -17625,7 +18761,7 @@ chapters:
           sie_sie: lieferten
         subjunctive_ii: null
         imperative:
-          du: liefre (du)!
+          du: liefere (du)!
           wir: liefern wir!
           ihr: liefert (ihr)!
           formal: liefern Sie!
@@ -17704,7 +18840,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: lobe
@@ -17761,7 +18897,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: lösche
@@ -17803,12 +18939,12 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: lösen
-      english: to release
+      english: to solve / loosen / release
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: löse
@@ -17992,7 +19128,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: male
@@ -18039,7 +19175,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: markiere
@@ -18086,7 +19222,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: mauere
@@ -18193,7 +19329,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: melde
@@ -18240,10 +19376,10 @@ chapters:
     - lemma: melken
       english: to milk
       grammar:
-        type: irregular
+        type: variable
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: melke
@@ -18283,15 +19419,10 @@ chapters:
           form: gemolken
       prepositional_uses:
       - patterns:
-        - phrase: melken von
+        - phrase: melken
           government:
-          - dative
-        meaning: to extract from
-      - patterns:
-        - phrase: melken aus
-          government:
-          - dative
-        meaning: to extract out of
+          - accusative
+        meaning: to milk an animal
       separable_compounds:
       - lemma: abmelken
         english: to siphon off / exploit
@@ -18301,12 +19432,12 @@ chapters:
         split_form: aus|melken
       bottom_layout: inline
     - lemma: merken
-      english: to notice / remember
+      english: to notice
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: merke
@@ -18353,7 +19484,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: messe
@@ -18400,7 +19531,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: miete
@@ -18447,7 +19578,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: mische
@@ -18494,7 +19625,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: missverstehe
@@ -18548,7 +19679,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: nähe
@@ -18608,7 +19739,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: acc
+        style: accdat
       conjugation:
         present:
           ich: nehme
@@ -18662,11 +19793,6 @@ chapters:
           government:
           - accusative
         meaning: to take for
-      - patterns:
-        - phrase: nehmen über
-          government:
-          - accusative
-        meaning: to take over / control of
       separable_compounds:
       - lemma: abnehmen
         english: to take off / lose weight / decrease
@@ -18695,14 +19821,11 @@ chapters:
       - lemma: zunehmen
         english: to increase
         split_form: zu|nehmen
-      - lemma: übernehmen
-        english: to take over
-        split_form: über|nehmen
       bottom_layout: inline
     - lemma: nennen
       english: to name
       grammar:
-        type: irregular
+        type: mixed
         auxiliaries:
         - haben
         style: acc
@@ -18799,12 +19922,12 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: nützen
-      english: to use
+      english: to benefit / use (regional)
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: nütze
@@ -18947,7 +20070,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: operiere
@@ -18994,7 +20117,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: ordne
@@ -19095,7 +20218,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: packe
@@ -19164,7 +20287,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: parke
@@ -19274,7 +20397,7 @@ chapters:
         type: regular
         auxiliaries:
         - sein
-        style: default
+        style: dat
       conjugation:
         present:
           ich: '-'
@@ -19317,7 +20440,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: pflanze
@@ -19364,7 +20487,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: pflege
@@ -19575,7 +20698,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: poste
@@ -19674,7 +20797,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: produziere
@@ -19768,7 +20891,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: prüfe
@@ -19918,7 +21041,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: räume
@@ -19968,7 +21091,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: rasiere
@@ -20015,7 +21138,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: rate
@@ -20073,7 +21196,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: rauche
@@ -20120,7 +21243,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: acc
+        style: default
       conjugation:
         present:
           ich: reagiere
@@ -20158,7 +21281,12 @@ chapters:
           - hatten
           reflexive: false
           form: reagiert
-      prepositional_uses: []
+      prepositional_uses:
+      - patterns:
+        - phrase: reagieren auf
+          government:
+          - accusative
+        meaning: to react / respond to
       separable_compounds: []
       bottom_layout: inline
     - lemma: realisieren
@@ -20167,7 +21295,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: realisiere
@@ -20214,7 +21342,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: rechne
@@ -20261,7 +21389,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: rede
@@ -20370,7 +21498,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: regle
@@ -20422,7 +21550,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: rege
@@ -20472,7 +21600,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: registriere
@@ -20562,7 +21690,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: reiche
@@ -20629,7 +21757,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: reinige
@@ -20678,13 +21806,7 @@ chapters:
           government:
           - dative
         meaning: to clean with
-      separable_compounds:
-      - lemma: abreinigen
-        english: to clean off
-        split_form: ab|reinigen
-      - lemma: ausreinigen
-        english: to clean out
-        split_form: aus|reinigen
+      separable_compounds: []
       bottom_layout: inline
     - lemma: reisen
       english: to travel
@@ -20740,7 +21862,7 @@ chapters:
         auxiliaries:
         - haben
         - sein
-        style: default
+        style: acc
       conjugation:
         present:
           ich: reite
@@ -20789,7 +21911,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: reklamiere
@@ -20834,10 +21956,10 @@ chapters:
           - dative
         meaning: to complain to
       - patterns:
-        - phrase: reklamieren für
+        - phrase: reklamieren
           government:
           - accusative
-        meaning: to claim for
+        meaning: to complain about goods / claim
       separable_compounds: []
       bottom_layout: inline
     - lemma: rennen
@@ -20893,7 +22015,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: repariere
@@ -20940,7 +22062,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: reserviere
@@ -20987,7 +22109,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: rette
@@ -21034,7 +22156,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: richte
@@ -21087,7 +22209,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: rieche
@@ -21272,7 +22394,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: acc
+        style: accdat
       conjugation:
         present:
           ich: sage
@@ -21390,7 +22512,7 @@ chapters:
     - lemma: saugen
       english: to vacuum / suck
       grammar:
-        type: regular
+        type: variable
         auxiliaries:
         - haben
         style: acc
@@ -21439,9 +22561,6 @@ chapters:
       - lemma: einsaugen
         english: to inhale / absorb
         split_form: ein|saugen
-      - lemma: staubsaugen
-        english: to vacuum
-        split_form: staub|saugen
       bottom_layout: inline
     - lemma: schaden
       english: to harm / damage
@@ -21449,7 +22568,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: dat
       conjugation:
         present:
           ich: schade
@@ -21489,10 +22608,10 @@ chapters:
           form: geschadet
       prepositional_uses:
       - patterns:
-        - phrase: schaden durch
+        - phrase: schaden
           government:
-          - accusative
-        meaning: to be harmed by
+          - dative
+        meaning: to harm someone / something
       separable_compounds: []
       bottom_layout: inline
     - lemma: schätzen
@@ -21501,7 +22620,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: schätze
@@ -21542,8 +22661,9 @@ chapters:
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
-    - lemma: schaffen
-      english: to manage, create
+    - lemma: schaffen (create)
+      display_name: schaffen
+      english: to create
       grammar:
         type: irregular
         auxiliaries:
@@ -21587,6 +22707,54 @@ chapters:
           reflexive: false
           form: geschaffen
       prepositional_uses: []
+      separable_compounds: []
+      bottom_layout: inline
+    - lemma: schaffen (manage)
+      display_name: schaffen
+      english: to manage / accomplish
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: schaffe
+          du: schaffst
+          er_sie_es: schafft
+          wir: schaffen
+          ihr: schafft
+          sie_sie: schaffen
+        preterite:
+          ich: schaffte
+          du: schafftest
+          er_sie_es: schaffte
+          wir: schafften
+          ihr: schafftet
+          sie_sie: schafften
+        subjunctive_ii: null
+        imperative:
+          du: schaff(e) (du)!
+          wir: schaffen wir!
+          ihr: schafft (ihr)!
+          formal: schaffen Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: geschafft
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: schaffen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: geschafft
+      prepositional_uses: []
       separable_compounds:
       - lemma: anschaffen
         english: to purchase / acquire
@@ -21598,7 +22766,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: schalte
@@ -21656,7 +22824,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: schaue
@@ -21761,7 +22929,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: schenke
@@ -21808,7 +22976,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: schicke
@@ -21874,7 +23042,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: schiebe
@@ -21921,7 +23089,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: schieße
@@ -22026,7 +23194,7 @@ chapters:
           sie_sie: schlafen
         preterite:
           ich: schlief
-          du: schliefest
+          du: schliefst
           er_sie_es: schlief
           wir: schliefen
           ihr: schlieft
@@ -22111,11 +23279,6 @@ chapters:
           government:
           - accusative
         meaning: to hit against / collide
-      - patterns:
-        - phrase: schlagen für
-          government:
-          - accusative
-        meaning: to vote / advocate for
       separable_compounds:
       - lemma: aufschlagen
         english: to hit open / pitch / unfold
@@ -22142,7 +23305,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: schleife
@@ -22310,7 +23473,7 @@ chapters:
         - phrase: schließen aus
           government:
           - dative
-        meaning: to infer from
+        meaning: to infer from (often with auf + Akk)
       - patterns:
         - phrase: schließen mit
           government:
@@ -22342,7 +23505,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: schmecke
@@ -22389,7 +23552,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: schmücke
@@ -22449,7 +23612,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: schnalle
@@ -22499,7 +23662,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: schneide
@@ -22589,7 +23752,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: acc
+        style: accdat
       conjugation:
         present:
           ich: schreibe
@@ -22652,9 +23815,9 @@ chapters:
           ich: schrie
           du: schriest
           er_sie_es: schrie
-          wir: schrieen
+          wir: schrien
           ihr: schriet
-          sie_sie: schrieen
+          sie_sie: schrien
         subjunctive_ii: null
         imperative:
           du: schrei (du)!
@@ -22686,7 +23849,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: schüttle
@@ -22958,7 +24121,7 @@ chapters:
         english: to look through / examine
         split_form: durch|sehen
       - lemma: einsehen
-        english: to review
+        english: to realise / inspect
         split_form: ein|sehen
       - lemma: fernsehen
         english: to watch television
@@ -22966,9 +24129,9 @@ chapters:
       - lemma: hinsehen
         english: to look (in a direction)
         split_form: hin|sehen
-      - lemma: umsehen
+      - lemma: sich umsehen
         english: to look around
-        split_form: um|sehen
+        split_form: sich um|sehen
       - lemma: wegsehen
         english: to look away / ignore
         split_form: weg|sehen
@@ -22982,7 +24145,7 @@ chapters:
         type: variable
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: sende
@@ -23029,7 +24192,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: setze
@@ -23101,10 +24264,10 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: sichre
+          ich: sichere
           du: sicherst
           er_sie_es: sichert
           wir: sichern
@@ -23119,7 +24282,7 @@ chapters:
           sie_sie: sicherten
         subjunctive_ii: null
         imperative:
-          du: sichre (du)!
+          du: sichere (du)!
           wir: sichern wir!
           ihr: sichert (ihr)!
           formal: sichern Sie!
@@ -23195,7 +24358,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: sieze
@@ -23247,7 +24410,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: singe
@@ -23360,7 +24523,7 @@ chapters:
           sie_sie: saßen
         subjunctive_ii: null
         imperative:
-          du: sitze (du)!
+          du: sitz (du)!
           wir: sitzen wir!
           ihr: sitzt (ihr)!
           formal: sitzen Sie!
@@ -23409,6 +24572,64 @@ chapters:
         english: to sit together / be grouped
         split_form: zusammen|sitzen
       bottom_layout: inline
+    - lemma: spannen
+      english: to stretch / tighten
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: spanne
+          du: spannst
+          er_sie_es: spannt
+          wir: spannen
+          ihr: spannt
+          sie_sie: spannen
+        preterite:
+          ich: spannte
+          du: spanntest
+          er_sie_es: spannte
+          wir: spannten
+          ihr: spanntet
+          sie_sie: spannten
+        subjunctive_ii: null
+        imperative:
+          du: spann(e) (du)!
+          wir: spannen wir!
+          ihr: spannt (ihr)!
+          formal: spannen Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: gespannt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: spannen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: gespannt
+      prepositional_uses:
+      - patterns:
+        - phrase: spannen über
+          government:
+          - accusative
+        meaning: to stretch over
+      separable_compounds:
+      - lemma: einspannen
+        english: to clamp / rope in
+        split_form: ein|spannen
+      - lemma: ausspannen
+        english: to unwind / take a break
+        split_form: aus|spannen
+      bottom_layout: stacked
     - lemma: sparen
       english: to save
       grammar:
@@ -23456,16 +24677,68 @@ chapters:
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
+    - lemma: spazieren gehen
+      english: to go for a walk
+      grammar:
+        type: irregular
+        auxiliaries:
+        - sein
+        style: default
+      conjugation:
+        present:
+          ich: gehe spazieren
+          du: gehst spazieren
+          er_sie_es: geht spazieren
+          wir: gehen spazieren
+          ihr: geht spazieren
+          sie_sie: gehen spazieren
+        preterite:
+          ich: ging spazieren
+          du: gingst spazieren
+          er_sie_es: ging spazieren
+          wir: gingen spazieren
+          ihr: gingt spazieren
+          sie_sie: gingen spazieren
+        subjunctive_ii: null
+        imperative:
+          du: geh(e) (du) spazieren!
+          wir: gehen wir spazieren!
+          ihr: geht (ihr) spazieren!
+          formal: gehen Sie spazieren!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - sein
+          reflexive: false
+          form: spazieren gegangen
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: spazieren gehen
+        pluperfect:
+          auxiliaries:
+          - waren
+          reflexive: false
+          form: spazieren gegangen
+      prepositional_uses:
+      - patterns:
+        - phrase: spazieren gehen in
+          government:
+          - dative
+        meaning: to go for a walk in
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: speichern
       english: to save
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: speichre
+          ich: speichere
           du: speicherst
           er_sie_es: speichert
           wir: speichern
@@ -23480,7 +24753,7 @@ chapters:
           sie_sie: speicherten
         subjunctive_ii: null
         imperative:
-          du: speichre (du)!
+          du: speichere (du)!
           wir: speichern wir!
           ihr: speichert (ihr)!
           formal: speichern Sie!
@@ -23556,7 +24829,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: spreche
@@ -23617,7 +24890,7 @@ chapters:
         meaning: to speak of
       separable_compounds:
       - lemma: absprechen
-        english: to agree / cancel
+        english: to agree on / deny someone something
         split_form: ab|sprechen
       - lemma: ansprechen
         english: to address / speak to
@@ -23682,7 +24955,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: spüle
@@ -23729,7 +25002,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: spüre
@@ -23823,7 +25096,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: staple
@@ -23884,7 +25157,7 @@ chapters:
         auxiliaries:
         - haben
         - sein
-        style: default
+        style: acc
       conjugation:
         present:
           ich: starte
@@ -23941,12 +25214,56 @@ chapters:
           - dative
         meaning: to start from
       separable_compounds:
-      - lemma: abstarten
-        english: to take off / depart
-        split_form: ab|starten
       - lemma: aufstarten
-        english: to launch / initiate
+        english: to start a computer / program (Swiss)
         split_form: auf|starten
+      bottom_layout: inline
+    - lemma: staubsaugen
+      english: to vacuum
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: staubsauge
+          du: staubsaugst
+          er_sie_es: staubsaugt
+          wir: staubsaugen
+          ihr: staubsaugt
+          sie_sie: staubsaugen
+        preterite:
+          ich: staubsaugte
+          du: staubsaugtest
+          er_sie_es: staubsaugte
+          wir: staubsaugten
+          ihr: staubsaugtet
+          sie_sie: staubsaugten
+        subjunctive_ii: null
+        imperative:
+          du: staubsaug(e) (du)!
+          wir: staubsaugen wir!
+          ihr: staubsaugt (ihr)!
+          formal: staubsaugen Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: gestaubsaugt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: staubsaugen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: gestaubsaugt
+      prepositional_uses: []
+      separable_compounds: []
       bottom_layout: inline
     - lemma: stechen
       english: to sting / to stab
@@ -23954,7 +25271,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: steche
@@ -24017,7 +25334,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: stecke
@@ -24157,7 +25474,7 @@ chapters:
         english: to be certain / be fixed
         split_form: fest|stehen
       - lemma: zustehen
-        english: to be entitled to
+        english: to be due to someone (Dat)
         split_form: zu|stehen
       bottom_layout: inline
     - lemma: stehlen
@@ -24166,7 +25483,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: stehle
@@ -24417,7 +25734,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: dat
+        style: default
       conjugation:
         present:
           ich: stimme
@@ -24530,7 +25847,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: störe
@@ -24577,7 +25894,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: stoppe
@@ -24626,10 +25943,7 @@ chapters:
           government:
           - dative
         meaning: to stop at
-      separable_compounds:
-      - lemma: anstoppen
-        english: to stop / halt briefly
-        split_form: an|stoppen
+      separable_compounds: []
       bottom_layout: inline
     - lemma: stoßen
       english: to bump / encounter
@@ -24638,7 +25952,7 @@ chapters:
         auxiliaries:
         - haben
         - sein
-        style: default
+        style: acc
       conjugation:
         present:
           ich: stoße
@@ -24686,13 +26000,65 @@ chapters:
         meaning: to encounter / come across
       separable_compounds: []
       bottom_layout: inline
+    - lemma: strecken
+      english: to stretch / extend
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: strecke
+          du: streckst
+          er_sie_es: streckt
+          wir: strecken
+          ihr: streckt
+          sie_sie: strecken
+        preterite:
+          ich: streckte
+          du: strecktest
+          er_sie_es: streckte
+          wir: streckten
+          ihr: strecktet
+          sie_sie: streckten
+        subjunctive_ii: null
+        imperative:
+          du: streck(e) (du)!
+          wir: strecken wir!
+          ihr: streckt (ihr)!
+          formal: strecken Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: gestreckt
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: strecken
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: gestreckt
+      prepositional_uses:
+      - patterns:
+        - phrase: die Hand strecken nach
+          government:
+          - dative
+        meaning: to reach out for
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: streichen
       english: to paint / stroke
       grammar:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: streiche
@@ -24743,7 +26109,7 @@ chapters:
         meaning: to paint / smear with
       separable_compounds:
       - lemma: abstreichen
-        english: to cancel / remove / coat off
+        english: to wipe off / cross off
         split_form: ab|streichen
       - lemma: aufstreichen
         english: to spread / coat onto
@@ -24852,7 +26218,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: studiere
@@ -24998,7 +26364,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: tanke
@@ -25045,7 +26411,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: tanze
@@ -25142,7 +26508,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: tausche
@@ -25205,7 +26571,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: teile
@@ -25318,7 +26684,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: teste
@@ -25365,7 +26731,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: tippe
@@ -25509,7 +26875,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: trainiere
@@ -25574,7 +26940,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: transportiere
@@ -25663,12 +27029,12 @@ chapters:
       separable_compounds: []
       bottom_layout: inline
     - lemma: treiben
-      english: to drive / do
+      english: to drive / pursue an activity
       grammar:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: treibe
@@ -25706,7 +27072,12 @@ chapters:
           - hatten
           reflexive: false
           form: getrieben
-      prepositional_uses: []
+      prepositional_uses:
+      - patterns:
+        - phrase: treiben zu
+          government:
+          - dative
+        meaning: to drive someone to
       separable_compounds: []
       bottom_layout: inline
     - lemma: treten
@@ -25782,7 +27153,7 @@ chapters:
           sie_sie: trinken
         preterite:
           ich: trank
-          du: trankest
+          du: trankst
           er_sie_es: trank
           wir: tranken
           ihr: trankt
@@ -25819,7 +27190,7 @@ chapters:
         auxiliaries:
         - haben
         - sein
-        style: default
+        style: acc
       conjugation:
         present:
           ich: trockne
@@ -25868,7 +27239,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: tröste
@@ -25912,11 +27283,6 @@ chapters:
           government:
           - dative
         meaning: to comfort with
-      - patterns:
-        - phrase: trösten über
-          government:
-          - accusative
-        meaning: to console about
       separable_compounds: []
       bottom_layout: inline
     - lemma: tun
@@ -26002,7 +27368,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: übe
@@ -26065,7 +27431,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: überfahre
@@ -26106,13 +27472,118 @@ chapters:
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
+    - lemma: überfliegen
+      english: to fly over / skim a text
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: überfliege
+          du: überfliegst
+          er_sie_es: überfliegt
+          wir: überfliegen
+          ihr: überfliegt
+          sie_sie: überfliegen
+        preterite:
+          ich: überflog
+          du: überflogst
+          er_sie_es: überflog
+          wir: überflogen
+          ihr: überflogt
+          sie_sie: überflogen
+        subjunctive_ii: null
+        imperative:
+          du: überflieg(e) (du)!
+          wir: überfliegen wir!
+          ihr: überfliegt (ihr)!
+          formal: überfliegen Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: überflogen
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: überfliegen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: überflogen
+      prepositional_uses: []
+      separable_compounds: []
+      bottom_layout: inline
+    - lemma: übergeben
+      english: to hand over / transfer
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: accdat
+      conjugation:
+        present:
+          ich: übergebe
+          du: übergibst
+          er_sie_es: übergibt
+          wir: übergeben
+          ihr: übergebt
+          sie_sie: übergeben
+        preterite:
+          ich: übergab
+          du: übergabst
+          er_sie_es: übergab
+          wir: übergaben
+          ihr: übergabt
+          sie_sie: übergaben
+        subjunctive_ii: null
+        imperative:
+          du: übergib (du)!
+          wir: übergeben wir!
+          ihr: übergebt (ihr)!
+          formal: übergeben Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: übergeben
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: übergeben
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: übergeben
+      prepositional_uses:
+      - patterns:
+        - phrase: übergeben
+          government:
+          - dative
+          - accusative
+        meaning: to hand something over to someone
+      - patterns:
+        - phrase: übergeben an
+          government:
+          - accusative
+        meaning: to hand over to
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: überholen
       english: to overtake
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: überhole
@@ -26247,13 +27718,65 @@ chapters:
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
+    - lemma: übernehmen
+      english: to take over / assume
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: übernehme
+          du: übernimmst
+          er_sie_es: übernimmt
+          wir: übernehmen
+          ihr: übernehmt
+          sie_sie: übernehmen
+        preterite:
+          ich: übernahm
+          du: übernahmst
+          er_sie_es: übernahm
+          wir: übernahmen
+          ihr: übernahmt
+          sie_sie: übernahmen
+        subjunctive_ii: null
+        imperative:
+          du: übernimm (du)!
+          wir: übernehmen wir!
+          ihr: übernehmt (ihr)!
+          formal: übernehmen Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: übernommen
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: übernehmen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: übernommen
+      prepositional_uses:
+      - patterns:
+        - phrase: übernehmen
+          government:
+          - accusative
+        meaning: to take over a task / assume responsibility
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: überprüfen
       english: to check
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: überprüfe
@@ -26300,7 +27823,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: überquere
@@ -26347,7 +27870,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: überrasche
@@ -26394,7 +27917,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: überrede
@@ -26435,13 +27958,66 @@ chapters:
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
+    - lemma: überreichen
+      english: to hand over / present
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: accdat
+      conjugation:
+        present:
+          ich: überreiche
+          du: überreichst
+          er_sie_es: überreicht
+          wir: überreichen
+          ihr: überreicht
+          sie_sie: überreichen
+        preterite:
+          ich: überreichte
+          du: überreichtest
+          er_sie_es: überreichte
+          wir: überreichten
+          ihr: überreichtet
+          sie_sie: überreichten
+        subjunctive_ii: null
+        imperative:
+          du: überreich(e) (du)!
+          wir: überreichen wir!
+          ihr: überreicht (ihr)!
+          formal: überreichen Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: überreicht
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: überreichen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: überreicht
+      prepositional_uses:
+      - patterns:
+        - phrase: überreichen
+          government:
+          - dative
+          - accusative
+        meaning: to present something to someone
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: übersetzen
       english: to translate
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: übersetze
@@ -26488,7 +28064,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: übertreibe
@@ -26535,7 +28111,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: überweise
@@ -26587,7 +28163,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: überzeuge
@@ -26681,7 +28257,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: unterbreche
@@ -26775,7 +28351,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: unterlasse
@@ -26822,7 +28398,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: unternehme
@@ -26879,7 +28455,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: unterrichte
@@ -26926,7 +28502,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: unterscheide
@@ -27025,7 +28601,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: unterstreiche
@@ -27072,7 +28648,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: unterstütze
@@ -27173,12 +28749,12 @@ chapters:
   - title: V
     verbs:
     - lemma: verabschieden
-      english: to say goodbye
+      english: to see off / adopt a law
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verabschiede
@@ -27216,7 +28792,12 @@ chapters:
           - hatten
           reflexive: false
           form: verabschiedet
-      prepositional_uses: []
+      prepositional_uses:
+      - patterns:
+        - phrase: verabschieden
+          government:
+          - accusative
+        meaning: to see someone off / adopt a law
       separable_compounds: []
       bottom_layout: inline
     - lemma: verändern
@@ -27243,7 +28824,7 @@ chapters:
           sie_sie: veränderten
         subjunctive_ii: null
         imperative:
-          du: veränder(e) (du)!
+          du: verändere (du)!
           wir: verändern wir!
           ihr: verändert (ihr)!
           formal: verändern Sie!
@@ -27272,10 +28853,10 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: verbessre
+          ich: verbessere
           du: verbesserst
           er_sie_es: verbessert
           wir: verbessern
@@ -27290,7 +28871,7 @@ chapters:
           sie_sie: verbesserten
         subjunctive_ii: null
         imperative:
-          du: verbessre (du)!
+          du: verbessere (du)!
           wir: verbessern wir!
           ihr: verbessert (ihr)!
           formal: verbessern Sie!
@@ -27319,7 +28900,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: verbiete
@@ -27366,7 +28947,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verbinde
@@ -27423,7 +29004,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verbrauche
@@ -27470,7 +29051,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verbreite
@@ -27529,10 +29110,11 @@ chapters:
     - lemma: verbrennen
       english: to burn
       grammar:
-        type: regular
+        type: mixed
         auxiliaries:
         - haben
-        style: default
+        - sein
+        style: acc
       conjugation:
         present:
           ich: verbrenne
@@ -27558,6 +29140,7 @@ chapters:
         perfect:
           auxiliaries:
           - haben
+          - sein
           reflexive: false
           form: verbrannt
         future:
@@ -27568,15 +29151,21 @@ chapters:
         pluperfect:
           auxiliaries:
           - hatten
+          - waren
           reflexive: false
           form: verbrannt
-      prepositional_uses: []
+      prepositional_uses:
+      - patterns:
+        - phrase: verbrennen
+          government:
+          - accusative
+        meaning: to burn something (hat verbrannt)
       separable_compounds: []
       bottom_layout: inline
     - lemma: verbringen
       english: to spend time
       grammar:
-        type: irregular
+        type: mixed
         auxiliaries:
         - haben
         style: acc
@@ -27626,7 +29215,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verdiene
@@ -27673,7 +29262,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: vereinbare
@@ -27718,10 +29307,10 @@ chapters:
           - dative
         meaning: to arrange with / agree with someone
       - patterns:
-        - phrase: vereinbaren über
+        - phrase: vereinbaren
           government:
           - accusative
-        meaning: to agree on / about something
+        meaning: to agree on something / arrange an appointment
       separable_compounds: []
       bottom_layout: inline
     - lemma: vergessen
@@ -27829,10 +29418,10 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: vergrößre
+          ich: vergrößere
           du: vergrößerst
           er_sie_es: vergrößert
           wir: vergrößern
@@ -27847,7 +29436,7 @@ chapters:
           sie_sie: vergrößerten
         subjunctive_ii: null
         imperative:
-          du: vergrößre (du)!
+          du: vergrößere (du)!
           wir: vergrößern wir!
           ihr: vergrößert (ihr)!
           formal: vergrößern Sie!
@@ -27876,7 +29465,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verhafte
@@ -27914,7 +29503,12 @@ chapters:
           - hatten
           reflexive: false
           form: verhaftet
-      prepositional_uses: []
+      prepositional_uses:
+      - patterns:
+        - phrase: verhaften wegen
+          government:
+          - genitive
+        meaning: to arrest for
       separable_compounds: []
       bottom_layout: inline
     - lemma: verhindern
@@ -27923,7 +29517,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verhindere
@@ -27975,7 +29569,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: verkaufe
@@ -28022,10 +29616,10 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: verlängre
+          ich: verlängere
           du: verlängerst
           er_sie_es: verlängert
           wir: verlängern
@@ -28040,7 +29634,7 @@ chapters:
           sie_sie: verlängerten
         subjunctive_ii: null
         imperative:
-          du: verlängre (du)!
+          du: verlängere (du)!
           wir: verlängern wir!
           ihr: verlängert (ihr)!
           formal: verlängern Sie!
@@ -28069,7 +29663,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verlange
@@ -28116,7 +29710,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: verleihe
@@ -28173,7 +29767,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verletze
@@ -28225,7 +29819,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verliere
@@ -28282,7 +29876,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: vermeide
@@ -28329,7 +29923,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: vermiete
@@ -28376,7 +29970,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: vermisse
@@ -28428,7 +30022,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: vermute
@@ -28475,7 +30069,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: veröffentliche
@@ -28516,13 +30110,66 @@ chapters:
       prepositional_uses: []
       separable_compounds: []
       bottom_layout: inline
+    - lemma: verordnen
+      english: to prescribe / order
+      grammar:
+        type: regular
+        auxiliaries:
+        - haben
+        style: accdat
+      conjugation:
+        present:
+          ich: verordne
+          du: verordnest
+          er_sie_es: verordnet
+          wir: verordnen
+          ihr: verordnet
+          sie_sie: verordnen
+        preterite:
+          ich: verordnete
+          du: verordnetest
+          er_sie_es: verordnete
+          wir: verordneten
+          ihr: verordnetet
+          sie_sie: verordneten
+        subjunctive_ii: null
+        imperative:
+          du: verordne (du)!
+          wir: verordnen wir!
+          ihr: verordnet (ihr)!
+          formal: verordnen Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: verordnet
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: verordnen
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: verordnet
+      prepositional_uses:
+      - patterns:
+        - phrase: verordnen
+          government:
+          - dative
+          - accusative
+        meaning: to prescribe treatment for someone
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: verpacken
       english: to pack / package
       grammar:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verpacke
@@ -28569,7 +30216,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verpasse
@@ -28616,7 +30263,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verpflege
@@ -28663,7 +30310,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verputze
@@ -28707,10 +30354,7 @@ chapters:
           government:
           - dative
         meaning: to plaster with
-      separable_compounds:
-      - lemma: einverputzen
-        english: to plaster in / apply
-        split_form: ein|verputzen
+      separable_compounds: []
       bottom_layout: inline
     - lemma: verraten
       english: to betray / reveal
@@ -28718,7 +30362,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: verrate
@@ -28812,7 +30456,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: versäume
@@ -28859,7 +30503,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verschiebe
@@ -28906,7 +30550,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verschmutze
@@ -28953,7 +30597,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: verschreibe
@@ -28991,7 +30635,13 @@ chapters:
           - hatten
           reflexive: false
           form: verschrieben
-      prepositional_uses: []
+      prepositional_uses:
+      - patterns:
+        - phrase: verschreiben
+          government:
+          - dative
+          - accusative
+        meaning: to prescribe medicine for someone
       separable_compounds: []
       bottom_layout: inline
     - lemma: verschwenden
@@ -29000,7 +30650,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verschwende
@@ -29114,10 +30764,10 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
-          ich: versichre
+          ich: versichere
           du: versicherst
           er_sie_es: versichert
           wir: versichern
@@ -29132,7 +30782,7 @@ chapters:
           sie_sie: versicherten
         subjunctive_ii: null
         imperative:
-          du: versichre (du)!
+          du: versichere (du)!
           wir: versichern wir!
           ihr: versichert (ihr)!
           formal: versichern Sie!
@@ -29161,7 +30811,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: verspreche
@@ -29208,7 +30858,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verstecke
@@ -29349,7 +30999,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verteile
@@ -29443,7 +31093,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: dat
       conjugation:
         present:
           ich: vertraue
@@ -29499,13 +31149,70 @@ chapters:
         meaning: to trust someone
       separable_compounds: []
       bottom_layout: inline
+    - lemma: vertreiben
+      english: to drive away / market goods
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: acc
+      conjugation:
+        present:
+          ich: vertreibe
+          du: vertreibst
+          er_sie_es: vertreibt
+          wir: vertreiben
+          ihr: vertreibt
+          sie_sie: vertreiben
+        preterite:
+          ich: vertrieb
+          du: vertriebst
+          er_sie_es: vertrieb
+          wir: vertrieben
+          ihr: vertriebt
+          sie_sie: vertrieben
+        subjunctive_ii: null
+        imperative:
+          du: vertreib (du)!
+          wir: vertreiben wir!
+          ihr: vertreibt (ihr)!
+          formal: vertreiben Sie!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: vertrieben
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: vertreiben
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: vertrieben
+      prepositional_uses:
+      - patterns:
+        - phrase: vertreiben aus
+          government:
+          - dative
+        meaning: to drive out of
+      - patterns:
+        - phrase: vertreiben von
+          government:
+          - dative
+        meaning: to drive away from
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: vertreten
       english: to represent / stand in for
       grammar:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: vertrete
@@ -29552,7 +31259,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verursache
@@ -29599,7 +31306,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verurteile
@@ -29646,7 +31353,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verwechsle
@@ -29690,10 +31397,10 @@ chapters:
     - lemma: verwenden
       english: to use
       grammar:
-        type: regular
+        type: variable
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: verwende
@@ -29740,7 +31447,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: dat
+        style: accdat
       conjugation:
         present:
           ich: verzeihe
@@ -29883,6 +31590,59 @@ chapters:
           government:
           - dative
         meaning: to decorate with
+      separable_compounds: []
+      bottom_layout: inline
+    - lemma: vorschreiben
+      english: to stipulate / dictate
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: accdat
+      conjugation:
+        present:
+          ich: schreibe vor
+          du: schreibst vor
+          er_sie_es: schreibt vor
+          wir: schreiben vor
+          ihr: schreibt vor
+          sie_sie: schreiben vor
+        preterite:
+          ich: schrieb vor
+          du: schriebst vor
+          er_sie_es: schrieb vor
+          wir: schrieben vor
+          ihr: schriebt vor
+          sie_sie: schrieben vor
+        subjunctive_ii: null
+        imperative:
+          du: schreib(e) (du) vor!
+          wir: schreiben wir vor!
+          ihr: schreibt (ihr) vor!
+          formal: schreiben Sie vor!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: vorgeschrieben
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: vorschreiben
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: vorgeschrieben
+      prepositional_uses:
+      - patterns:
+        - phrase: vorschreiben
+          government:
+          - dative
+          - accusative
+        meaning: to dictate something to someone
       separable_compounds: []
       bottom_layout: inline
   - title: W
@@ -30058,7 +31818,7 @@ chapters:
         style: default
       conjugation:
         present:
-          ich: wandre
+          ich: wandere
           du: wanderst
           er_sie_es: wandert
           wir: wandern
@@ -30073,7 +31833,7 @@ chapters:
           sie_sie: wanderten
         subjunctive_ii: null
         imperative:
-          du: wandre (du)!
+          du: wandere (du)!
           wir: wandern wir!
           ihr: wandert (ihr)!
           formal: wandern Sie!
@@ -30102,7 +31862,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: warne
@@ -30247,7 +32007,7 @@ chapters:
         auxiliaries:
         - haben
         - sein
-        style: default
+        style: acc
       conjugation:
         present:
           ich: wechsle
@@ -30309,7 +32069,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: wecke
@@ -30408,7 +32168,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: weise
@@ -30452,13 +32212,71 @@ chapters:
         english: to point out
         split_form: hin|weisen
       bottom_layout: inline
+    - lemma: weitergeben
+      english: to pass on / forward
+      grammar:
+        type: irregular
+        auxiliaries:
+        - haben
+        style: accdat
+      conjugation:
+        present:
+          ich: gebe weiter
+          du: gibst weiter
+          er_sie_es: gibt weiter
+          wir: geben weiter
+          ihr: gebt weiter
+          sie_sie: geben weiter
+        preterite:
+          ich: gab weiter
+          du: gabst weiter
+          er_sie_es: gab weiter
+          wir: gaben weiter
+          ihr: gabt weiter
+          sie_sie: gaben weiter
+        subjunctive_ii: null
+        imperative:
+          du: gib (du) weiter!
+          wir: geben wir weiter!
+          ihr: gebt (ihr) weiter!
+          formal: geben Sie weiter!
+      compound_tenses:
+        perfect:
+          auxiliaries:
+          - haben
+          reflexive: false
+          form: weitergegeben
+        future:
+          auxiliaries:
+          - werden
+          reflexive: false
+          form: weitergeben
+        pluperfect:
+          auxiliaries:
+          - hatten
+          reflexive: false
+          form: weitergegeben
+      prepositional_uses:
+      - patterns:
+        - phrase: weitergeben
+          government:
+          - dative
+          - accusative
+        meaning: to pass something on to someone
+      - patterns:
+        - phrase: weitergeben an
+          government:
+          - accusative
+        meaning: to pass on to
+      separable_compounds: []
+      bottom_layout: inline
     - lemma: wenden
       english: to turn
       grammar:
-        type: mixed
+        type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: wende
@@ -30508,7 +32326,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: werfe
@@ -30668,7 +32486,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: wiederhole
@@ -30715,7 +32533,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: wiege
@@ -30762,7 +32580,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: dat
       conjugation:
         present:
           ich: winke
@@ -30889,7 +32707,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: weiß
@@ -30983,7 +32801,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: wünsche
@@ -31032,7 +32850,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: zähle
@@ -31079,7 +32897,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: accdat
       conjugation:
         present:
           ich: zahle
@@ -31139,7 +32957,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: zeichne
@@ -31186,7 +33004,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: acc
+        style: accdat
       conjugation:
         present:
           ich: zeige
@@ -31231,20 +33049,10 @@ chapters:
           - accusative
         meaning: to point to / indicate
       - patterns:
-        - phrase: zeigen für
-          government:
-          - accusative
-        meaning: to show for / demonstrate
-      - patterns:
         - phrase: zeigen mit
           government:
           - dative
         meaning: to show with
-      - patterns:
-        - phrase: zeigen von
-          government:
-          - dative
-        meaning: to show of / about
       separable_compounds:
       - lemma: anzeigen
         english: to display / report
@@ -31252,9 +33060,6 @@ chapters:
       - lemma: aufzeigen
         english: to point out / indicate
         split_form: auf|zeigen
-      - lemma: nachzeigen
-        english: to show afterward / demonstrate later
-        split_form: nach|zeigen
       - lemma: vorzeigen
         english: to demonstrate / exhibit
         split_form: vor|zeigen
@@ -31312,7 +33117,7 @@ chapters:
         type: regular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: zerstöre
@@ -31370,7 +33175,7 @@ chapters:
         auxiliaries:
         - haben
         - sein
-        style: default
+        style: acc
       conjugation:
         present:
           ich: ziehe
@@ -31518,7 +33323,7 @@ chapters:
         type: irregular
         auxiliaries:
         - haben
-        style: default
+        style: acc
       conjugation:
         present:
           ich: zwinge
@@ -31556,6 +33361,11 @@ chapters:
           - hatten
           reflexive: false
           form: gezwungen
-      prepositional_uses: []
+      prepositional_uses:
+      - patterns:
+        - phrase: zwingen zu
+          government:
+          - dative
+        meaning: to force someone to
       separable_compounds: []
       bottom_layout: inline

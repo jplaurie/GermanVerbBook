@@ -28,6 +28,7 @@
 \definecolor{caseNominativeBg}{RGB}{255,224,224}
 \definecolor{caseAccusativeBg}{RGB}{222,235,255}
 \definecolor{caseDativeBg}{RGB}{224,244,224}
+\definecolor{caseAccusativeDativeBg}{RGB}{237,225,250}
 \definecolor{caseGenitiveBg}{RGB}{255,245,194}
 
 \definecolor{genderMasculine}{RGB}{20,70,150}
@@ -154,6 +155,7 @@
   style/.store in=\verb@style,
   toc/.store in=\verb@toc,
   name/.store in=\verb@name,
+  display-name/.store in=\verb@displayname,
   english/.store in=\verb@english,
   type/.store in=\verb@type,
   auxiliary/.store in=\verb@auxiliary,
@@ -164,6 +166,7 @@
     style=default,
     toc={},
     name={},
+    display-name={\verb@name},
     english={},
     type={},
     auxiliary={}%
@@ -176,6 +179,7 @@
   \ifdefstring{\verb@style}{nom}{\def\verb@background{caseNominativeBg}}{}%
   \ifdefstring{\verb@style}{acc}{\def\verb@background{caseAccusativeBg}}{}%
   \ifdefstring{\verb@style}{dat}{\def\verb@background{caseDativeBg}}{}%
+  \ifdefstring{\verb@style}{accdat}{\def\verb@background{caseAccusativeDativeBg}}{}%
   \ifdefstring{\verb@style}{gen}{\def\verb@background{caseGenitiveBg}}{}%
   \ifdefstring{\verb@style}{sep}{\def\verb@background{orange!20}}{}%
 }
@@ -209,7 +213,7 @@
   \phantomsection
   \germanbookgermanindex{\verb@name}%
   \germanbookenglishindex{\verb@english}{\verb@name}%
-  {\Large\bfseries \verb@name} (\verb@english) \hfill
+  {\Large\bfseries \verb@displayname} (\verb@english) \hfill
   Type: \textbf{\verb@type} \hfill
   Auxiliary Verb: \textbf{\verb@auxiliary}%
 }{%
@@ -244,6 +248,7 @@
   /germanbook/table/.is family,
   /germanbook/table,
   name/.store in=\verbtable@name,
+  display-name/.store in=\verbtable@displayname,
   english/.store in=\verbtable@english,
   type/.store in=\verbtable@type,
   auxiliary/.store in=\verbtable@auxiliary,
@@ -282,7 +287,7 @@
 
 \newcommand{\verbtable@prepositionblock}{%
   \begin{tabular}{@{}lll@{}}
-    \multicolumn{3}{@{}l}{\textbf{MIT PRÄPOSITIONEN}}\\
+    \multicolumn{3}{@{}l}{\textbf{KONSTRUKTIONEN}}\\
     \ifdefstring{\verbtable@prepositions}{---}
       {& \textbf{---} & \\}
       {\verbtable@prepositions}
@@ -301,6 +306,7 @@
 \NewDocumentCommand{\VerbTable}{m}{%
   \begingroup
   \def\verbtable@name{}%
+  \def\verbtable@displayname{\verbtable@name}%
   \def\verbtable@english{}%
   \def\verbtable@type{}%
   \def\verbtable@auxiliary{}%
@@ -319,6 +325,7 @@
   \begin{verbentry}{
     style/.expanded = {\verbtable@style},
     name/.expanded = {\verbtable@name},
+    display-name/.expanded = {\verbtable@displayname},
     english/.expanded = {\verbtable@english},
     type/.expanded = {\verbtable@type},
     auxiliary/.expanded = {\verbtable@auxiliary}

@@ -8,7 +8,7 @@ on practical verb usage.
 The book is an ongoing project. Corrections and constructive suggestions are
 welcome.
 
-All 600 verb tables are maintained as structured YAML records. The grammar chapters and visual design remain in LaTeX because
+All 635 verb tables are maintained as structured YAML records. The grammar chapters and visual design remain in LaTeX because
 prose and print layout are already expressed well there. The build pipeline is:
 
 ```text
@@ -51,6 +51,8 @@ The underlying generator commands are also available as
 
 - `main.tex` — book assembly and ordering
 - `grammar/` — grammar-reference chapters
+- `grammar/comparative-and-superlative.tex` — comparison rules, examples and
+  60 common adjective forms; cross-references the existing declension tables
 - `verbs/verbs.yaml` — canonical source for all verb data
 - `verbs/verb-list.tex` — generated LaTeX; do not edit directly
 - `verbs/introductions/` — explanatory notes included in the verb reference
@@ -79,9 +81,43 @@ book's chapter and alphabetical-section ordering. Each verb separates:
 prefix behaviour, and register do not belong in this label; they are either
 represented elsewhere in the record or left out of the compact heading.
 
+An optional `display_name` overrides the bold table heading while `lemma`
+retains the unique entry name used for validation and indexing.
+
+### Table colours
+
+`grammar.style` records the common object-case patterns in the meanings shown:
+
+| Style | Background | Pattern |
+| --- | --- | --- |
+| `acc` | Blue | Accusative object or reflexive pronoun |
+| `dat` | Green | Dative object |
+| `accdat` | Purple | Both cases, together or in different common meanings |
+| `default` | Grey | No Akk/Dat object pattern highlighted in the usual meaning |
+| `nom` | Pink | Nominative complement of the auxiliaries `sein` and `werden` |
+| `modal` | Yellow | Modal-verb chapter |
+
+Prepositional government does not determine the background. Count reflexive
+pronouns: `sich erinnern` is `acc`, whereas `sich merken` is `accdat`
+(`sich` in the dative plus an accusative thing remembered). Do not classify a
+verb as `accdat` solely because a free beneficiary can be added: `etwas kaufen`
+remains `acc` even though `jemandem etwas kaufen` is possible.
+
+The printed `KONSTRUKTIONEN` block includes both bare object-case patterns and
+prepositional uses; the data field remains named `prepositional_uses`.
+
+Colours describe selected common patterns, not every sense or an obligation
+to express an object in every sentence. Compact compounds do not inherit the
+stem's case government. The printed legend is in
+`verbs/introductions/table-convention.tex`; editorial decisions and references
+are recorded in [docs/verb-case-colours.md](docs/verb-case-colours.md).
+
 The two explanatory callout boxes remain in `verbs/introductions/`, just as
 the longer grammar prose remains in `grammar/`.
 
 `scripts/import_existing_tex.py` records how the initial YAML data was
 migrated from the former handwritten `verbs/verb-list.tex`. It is retained as
 migration history and is not part of the normal editing workflow.
+
+The November 2026 linguistic review and its validation scope are documented in
+[docs/verb-audit-2026-11.md](docs/verb-audit-2026-11.md).

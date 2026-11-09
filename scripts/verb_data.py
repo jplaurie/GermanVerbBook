@@ -15,7 +15,7 @@ OUTPUT_FILE = ROOT / "verbs" / "verb-list.tex"
 
 PERSONS = ("ich", "du", "er_sie_es", "wir", "ihr", "sie_sie")
 IMPERATIVES = ("du", "wir", "ihr", "formal")
-STYLES = {"default", "nom", "acc", "dat", "gen", "modal", "sep"}
+STYLES = {"default", "nom", "acc", "dat", "accdat", "gen", "modal", "sep"}
 VERB_TYPES = {"regular", "irregular", "mixed", "modal", "variable"}
 LAYOUTS = {"inline", "stacked"}
 GOVERNMENT = {
@@ -108,8 +108,12 @@ def validate_document(document: Any) -> dict[str, Any]:
                     "compound_tenses", "prepositional_uses",
                     "separable_compounds", "bottom_layout",
                 }
+                if "display_name" in verb:
+                    expected.add("display_name")
                 require_exact_keys(verb, expected, location)
                 require_string(verb["lemma"], f"{location}.lemma")
+                if "display_name" in verb:
+                    require_string(verb["display_name"], f"{location}.display_name")
                 require_string(verb["english"], f"{location}.english")
                 if verb["lemma"] in seen:
                     raise ValidationError(f"duplicate verb headword: {verb['lemma']}")
@@ -154,6 +158,25 @@ def validate_document(document: Any) -> dict[str, Any]:
                 for tense in ("perfect", "future", "pluperfect"):
                     validate_tense(tenses[tense], f"{location}.compound_tenses.{tense}")
 
+                if tenses["perfect"]["form"] != tenses["pluperfect"]["form"]:
+                    raise ValidationError(f"{location}: perfect and pluperfect participles differ")
+                if tenses["perfect"]["auxiliaries"] != grammar["auxiliaries"]:
+                    raise ValidationError(f"{location}: perfect auxiliaries differ from heading")
+                past_auxiliaries = [
+                    {"haben": "hatten", "sein": "waren"}[item]
+                    for item in grammar["auxiliaries"]
+                ]
+                if tenses["pluperfect"]["auxiliaries"] != past_auxiliaries:
+                    raise ValidationError(f"{location}: incorrect pluperfect auxiliaries")
+                infinitive = re.sub(r" \([^)]*\)$", "", verb["lemma"]).removeprefix("sich ")
+                if tenses["future"]["form"] != infinitive:
+                    raise ValidationError(f"{location}: future form differs from infinitive")
+                if tenses["future"]["auxiliaries"] != ["werden"]:
+                    raise ValidationError(f"{location}: future auxiliary must be werden")
+                reflexive = verb["lemma"].startswith("sich ")
+                if any(tense["reflexive"] != reflexive for tense in tenses.values()):
+                    raise ValidationError(f"{location}: inconsistent reflexive compound tense")
+
                 uses = verb["prepositional_uses"]
                 if not isinstance(uses, list):
                     raise ValidationError(f"{location}.prepositional_uses must be a list")
@@ -185,6 +208,8 @@ def validate_document(document: Any) -> dict[str, Any]:
                         require_string(compound[key], f"{compound_location}.{key}")
                     if "|" not in compound["split_form"]:
                         raise ValidationError(f"{compound_location}.split_form must contain |")
+                    if compound["split_form"].replace("|", "") != compound["lemma"]:
+                        raise ValidationError(f"{compound_location}: split form differs from headword")
                     if compound["lemma"] in seen:
                         raise ValidationError(f"duplicate verb headword: {compound['lemma']}")
                     seen.add(compound["lemma"])
@@ -305,6 +330,8 @@ def render_verb(verb: dict[str, Any]) -> str:
         f"  prepositions = {{{render_prepositions(verb['prepositional_uses'])}}}",
         f"  separable = {{{render_compounds(verb['separable_compounds'])}}}",
     ]
+    if "display_name" in verb:
+        fields.append(f"  display-name = {{{latex_text(verb['display_name'])}}}")
     if verb["bottom_layout"] != "inline":
         fields.append(f"  bottom-layout = {{{verb['bottom_layout']}}}")
     return "\\VerbTable{\n" + ",\n".join(fields) + "\n}\n"
