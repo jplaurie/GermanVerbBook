@@ -8,8 +8,7 @@ on practical verb usage.
 The book is an ongoing project. Corrections and constructive suggestions are
 welcome.
 
-All 600 verb tables are maintained as structured YAML rather than handwritten
-LaTeX records. The grammar chapters and visual design remain in LaTeX because
+All 600 verb tables are maintained as structured YAML records. The grammar chapters and visual design remain in LaTeX because
 prose and print layout are already expressed well there. The build pipeline is:
 
 ```text
